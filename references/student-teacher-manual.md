@@ -18,6 +18,30 @@ By the end of this sequence, students should be able to:
 - create simple charts with Plotly Express,
 - write short evidence-based conclusions from charts.
 
+## Keywords
+- CSV file:
+  A CSV file is a plain text data file that stores table information. `CSV` stands for `comma-separated values`, which means each row of data is written as a line and each value is separated by a comma.
+- DataFrame:
+  A DataFrame is a table object in pandas. It organizes data into rows and columns.
+- `df`:
+  `df` is a short, common variable name for a DataFrame.
+- Row:
+  A row is one record in a table. It usually represents one case, one year, one person, or one observation.
+- Column:
+  A column is one field or category in a table. It holds one type of information for all rows.
+- Variable:
+  A variable is a piece of information we measure or record, such as `Year`, `Winter`, or `Percentage`.
+- Observation:
+  An observation is one complete row of data.
+- List:
+  A list is a Python collection that stores multiple items in order. Lists use brackets, such as `["Winter", "Spring", "Summer", "Autumn"]`.
+- `NaN`:
+  `NaN` stands for `Not a Number` and usually means a value is missing or invalid.
+- Method:
+  A method is an action you run with parentheses, such as `df.head()` or `df.dropna()`.
+- Property:
+  A property is stored information you access without parentheses, such as `df.columns`.
+
 ## Course Sequence (Recommended Start)
 ### Module 0: Importing and Library Setup (Start Here)
 Student goals:
