@@ -58,6 +58,7 @@ When Yolanda sends a new dataset/resource link:
 - Design notebooks for beginners using very small, sequential steps.
 - Keep code cells to one task at a time (for example: conversion in one cell, charting in a later cell).
 - Add a short markdown explanation before or after key operations so students know what is happening.
+- For each step, start the markdown with a short big-picture explanation of what the following code cell does, then follow with the technical details of how the code works.
 - Include early vocabulary support:
   - what a DataFrame is,
   - why `df` is used as the table variable name,
