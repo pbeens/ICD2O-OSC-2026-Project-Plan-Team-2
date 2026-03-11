@@ -97,6 +97,17 @@ Activities:
     - y-axis: `Number of Stations`
 - Label chart parts: title, x-axis, y-axis, and bar height meaning.
 - Short write-up: "Which trend category has the most stations, and what does that suggest?"
+- Guided run of `notebooks/csv/temperature-change-seasonal-exploration.ipynb`.
+- Seasonal notebook workflow highlights:
+  - Step 8: check data types for all columns with `display(df.dtypes)`.
+  - Step 9: convert all columns to numeric using a first `for` loop:
+    - `for col in df.columns:`
+    - `df[col] = pd.to_numeric(df[col], errors="coerce")`
+  - Step 10: build one line chart for all seasons directly in Plotly:
+    - `y=["Winter", "Spring", "Summer", "Autumn"]`
+  - Do not add extra row deletion steps unless there is a clear data-quality reason.
+- Seasonal interpretation prompt:
+  - "Which season shows the largest positive departures over time, and what evidence in the chart supports your claim?"
 
 Deliverable:
 - Screenshot/export of first chart + 3-sentence interpretation.
@@ -116,6 +127,17 @@ Teacher script notes for Module 2:
 - Pacing/style language:
   - "Keep each code cell focused on one task only."
   - "Use a separate conversion cell before plotting when teaching data types."
+- Seasonal-departure language:
+  - "A seasonal temperature departure is observed seasonal average minus baseline seasonal average."
+  - "Positive departure means warmer than baseline; negative means cooler than baseline."
+  - "The baseline in this notebook is the 1961-1990 climate normal period used by Environment and Climate Change Canada."
+- First-loop language:
+  - "A `for` loop repeats one action for each item in a list."
+  - "In `for col in df.columns`, `col` becomes one column name at a time."
+  - "`errors=\"coerce\"` changes non-numeric values to `NaN` instead of stopping with an error."
+- Data-cleaning decision language:
+  - "Check `df.dtypes` before plotting so students can justify why conversion is needed."
+  - "Avoid deleting additional rows if the lesson goal is to preserve all seasons for plotting."
 
 ## Teaching Notes
 - Prefer direct CSV/Excel datasets for core lessons.
