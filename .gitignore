@@ -51,3 +51,4 @@ artifacts/
 .env
 .env.*
 *.local
+notebooks/CriticalHabitat.zip
