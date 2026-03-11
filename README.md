@@ -9,7 +9,10 @@ Resource and analysis workspace for developing the ICD2O project plan.
 
 ## Repository Structure
 - `datasets/`: lightweight sample files, metadata notes, and data references.
-- `notebooks/`: Jupyter notebooks for each analysis topic.
+- `notebooks/`: Jupyter notebooks organized by input format:
+  - `notebooks/zip/`
+  - `notebooks/csv/`
+  - `notebooks/excel/`
 - `references/`: source lists, summaries, and planning documents.
 - `logs/` (optional): ingestion or processing notes.
 
@@ -49,6 +52,8 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+Core libraries used in notebooks include `pandas`, `numpy`, `plotly`, and `geopandas`.
+
 ### 4) Start Jupyter
 ```powershell
 jupyter lab
@@ -75,6 +80,9 @@ Each notebook should include at the bottom:
 Dataset/resource intake is tracked in:
 
 - `references/dataset-links.md`
+
+## Classroom Manual
+- `references/student-teacher-manual.md` (student/teacher guide for Grade 10 beginner workflow)
 
 ## Working Notes
 - Keep documentation current when notebooks or data sources are added.

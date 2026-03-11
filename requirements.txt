@@ -2,5 +2,5 @@ jupyterlab
 notebook
 pandas
 numpy
-matplotlib
+plotly
 geopandas

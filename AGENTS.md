@@ -47,9 +47,21 @@ When Yolanda sends a new dataset/resource link:
 - Start each notebook with:
   - Title
   - Objective
+  - Dataset description (what the file contains and what each row represents)
   - Data source(s)
   - Date/author
 - End each notebook with a Colab launch link section.
+
+## Beginner Classroom Notebook Requirements
+- Design notebooks for beginners using very small, sequential steps.
+- Keep code cells to one task at a time (for example: conversion in one cell, charting in a later cell).
+- Add a short markdown explanation before or after key operations so students know what is happening.
+- Include early vocabulary support:
+  - what a DataFrame is,
+  - why `df` is used as the table variable name,
+  - the difference between methods (for example `df.head()`) and properties (for example `df.columns`).
+- When cleaning data, explain `NaN` in plain language and explain commands used (for example `dropna()`, `drop(index=...)`, `errors="ignore"`, `copy()`).
+- Avoid unnecessary transformation steps; only include cleanup logic that is actually needed by the current dataset.
 
 ## Required Colab Link Footer (Every Notebook)
 Add a final Markdown cell at the bottom of each notebook:
