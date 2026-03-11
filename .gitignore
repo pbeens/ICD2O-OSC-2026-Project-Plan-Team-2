@@ -1,0 +1,53 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+.jupyter/
+.ipython/
+
+# Test and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+logs/*.log
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data-heavy or generated outputs
+datasets/raw/
+datasets/processed/
+outputs/
+artifacts/
+
+# Secrets and environment files
+.env
+.env.*
+*.local
