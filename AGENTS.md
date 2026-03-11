@@ -53,6 +53,8 @@ When Yolanda sends a new dataset/resource link:
 - End each notebook with a Colab launch link section.
 
 ## Beginner Classroom Notebook Requirements
+- Use direct CSV or Excel sources only for beginner classroom notebooks.
+- Do not use ZIP-based ingestion in the beginner workflow.
 - Design notebooks for beginners using very small, sequential steps.
 - Keep code cells to one task at a time (for example: conversion in one cell, charting in a later cell).
 - Add a short markdown explanation before or after key operations so students know what is happening.
