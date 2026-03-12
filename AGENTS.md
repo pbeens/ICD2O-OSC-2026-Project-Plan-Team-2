@@ -81,6 +81,18 @@ Replace placeholders:
 - `<BRANCH>`: usually `main`
 - `<NOTEBOOK_FILE>`: exact notebook filename
 
+For this repository, use:
+- `<OWNER>` = `pbeens`
+- `<REPO>` = `ICD2O-OSC-2026-Project-Plan-Team-2`
+- `<BRANCH>` = `main`
+
+Colab link validation technique:
+1. Build the Colab URL with the exact GitHub owner/repo/path (do not use local profile names like `Peter` unless that is the real GitHub owner).
+2. Convert it to the matching GitHub URL and open it in a browser:
+   - `https://github.com/pbeens/ICD2O-OSC-2026-Project-Plan-Team-2/blob/main/notebooks/<path>.ipynb`
+3. If GitHub opens the notebook file successfully, the Colab link should resolve.
+4. If Colab shows a `404` from `api.github.com/repos/...`, re-check owner/repo spelling and branch name first.
+
 ## Working Conventions For Agents
 - Keep documentation up to date whenever new notebooks or data sources are added.
 - Do not delete or overwrite user-created analysis without explicit request.
