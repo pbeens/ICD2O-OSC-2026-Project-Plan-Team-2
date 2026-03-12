@@ -86,6 +86,7 @@ Replace placeholders:
 - Do not delete or overwrite user-created analysis without explicit request.
 - Prefer small, traceable edits with clear commit messages.
 - If a notebook is created or renamed, ensure its Colab footer link matches the new path.
+- Keep keyword sections alphabetized by keyword name (for example, `## Keywords` in reference manuals).
 - When uncertain about data licensing or source credibility, flag it in notes before use.
 
 ## Definition of Done For New Notebook Creation

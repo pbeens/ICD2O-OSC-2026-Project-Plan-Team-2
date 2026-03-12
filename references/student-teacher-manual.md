@@ -19,28 +19,32 @@ By the end of this sequence, students should be able to:
 - write short evidence-based conclusions from charts.
 
 ## Keywords
+- Column:
+  A column is one field or category in a table. It holds one type of information for all rows.
 - CSV file:
   A CSV file is a plain text data file that stores table information. `CSV` stands for `comma-separated values`, which means each row of data is written as a line and each value is separated by a comma.
 - DataFrame:
   A DataFrame is a table object in pandas. It organizes data into rows and columns.
 - `df`:
   `df` is a short, common variable name for a DataFrame.
-- Row:
-  A row is one record in a table. It usually represents one case, one year, one person, or one observation.
-- Column:
-  A column is one field or category in a table. It holds one type of information for all rows.
-- Variable:
-  A variable is a piece of information we measure or record, such as `Year`, `Winter`, or `Percentage`.
-- Observation:
-  An observation is one complete row of data.
 - List:
   A list is a Python collection that stores multiple items in order. Lists use brackets, such as `["Winter", "Spring", "Summer", "Autumn"]`.
-- `NaN`:
-  `NaN` stands for `Not a Number` and usually means a value is missing or invalid.
 - Method:
   A method is an action you run with parentheses, such as `df.head()` or `df.dropna()`.
+- `NaN`:
+  `NaN` stands for `Not a Number` and usually means a value is missing or invalid.
+- Observation:
+  An observation is one complete row of data.
+- Pandas:
+  Pandas is a Python library for working with table data. In this course, it is used to load, inspect, clean, and organize datasets in DataFrames.
+- Plotly Express:
+  Plotly Express is a Python charting library that creates interactive visualizations from DataFrames with short, beginner-friendly code.
 - Property:
   A property is stored information you access without parentheses, such as `df.columns`.
+- Row:
+  A row is one record in a table. It usually represents one case, one year, one person, or one observation.
+- Variable:
+  A variable is a piece of information we measure or record, such as `Year`, `Winter`, or `Percentage`.
 
 ## Course Sequence (Recommended Start)
 ### Module 0: Importing and Library Setup (Start Here)
