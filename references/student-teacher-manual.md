@@ -18,6 +18,14 @@ By the end of this sequence, students should be able to:
 - create simple charts with Plotly Express,
 - write short evidence-based conclusions from charts.
 
+## Where to Run Jupyter Notebooks
+Students can run course notebooks in any of these environments:
+- Google Colab: Runs in a browser with no local setup. Requires a Google login.
+- Callysto: Browser-based notebook environment used in schools. Requires a Google or Microsoft login.
+- VS Code: Run `.ipynb` notebooks in the Jupyter extension. Requires Python installed locally.
+- Thonny: Beginner-friendly editor for Python. Best for `.py` practice files and simple notebook-adjacent workflows when Python is installed locally.
+- JupyterLab: Full notebook environment on your computer. Requires Python installed and JupyterLab set up locally.
+
 ## Keywords
 - Column:
   A column is one field or category in a table. It holds one type of information for all rows.
@@ -27,10 +35,10 @@ By the end of this sequence, students should be able to:
   A DataFrame is a table object in pandas. It organizes data into rows and columns.
 - `df`:
   `df` is a short, common variable name for a DataFrame.
+- JSON:
+  JSON is a text-based data format used to store and share structured data with key-value pairs and lists.
 - List:
   A list is a Python collection that stores multiple items in order. Lists use brackets, such as `["Winter", "Spring", "Summer", "Autumn"]`.
-- Method:
-  A method is an action you run with parentheses, such as `df.head()` or `df.dropna()`.
 - `NaN`:
   `NaN` stands for `Not a Number` and usually means a value is missing or invalid.
 - Observation:
@@ -39,12 +47,14 @@ By the end of this sequence, students should be able to:
   Pandas is a Python library for working with table data. In this course, it is used to load, inspect, clean, and organize datasets in DataFrames.
 - Plotly Express:
   Plotly Express is a Python charting library that creates interactive visualizations from DataFrames with short, beginner-friendly code.
-- Property:
-  A property is stored information you access without parentheses, such as `df.columns`.
 - Row:
   A row is one record in a table. It usually represents one case, one year, one person, or one observation.
 - Variable:
   A variable is a piece of information we measure or record, such as `Year`, `Winter`, or `Percentage`.
+
+## Pandas Reference
+- `len(df)`:
+  Returns the number of rows in the DataFrame `df`.
 
 ## Course Sequence (Recommended Start)
 ### Module 0: Importing and Library Setup (Start Here)
