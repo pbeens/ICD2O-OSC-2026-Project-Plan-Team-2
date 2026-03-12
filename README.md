@@ -1,4 +1,4 @@
-# ICD2O OSC 2026 Project Plan Team 2
+﻿# ICD2O OSC 2026 Project Plan Team 2
 
 Resource and analysis workspace for developing the ICD2O project plan.
 
@@ -13,6 +13,7 @@ Resource and analysis workspace for developing the ICD2O project plan.
   - `notebooks/zip/`
   - `notebooks/csv/`
   - `notebooks/excel/`
+  - `notebooks/json/`
 - `references/`: source lists, summaries, and planning documents.
 - `logs/` (optional): ingestion or processing notes.
 

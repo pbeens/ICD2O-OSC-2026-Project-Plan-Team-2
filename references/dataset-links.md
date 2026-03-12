@@ -1,4 +1,4 @@
-# Dataset Links
+﻿# Dataset Links
 
 Tracking table for dataset/resource links shared for this project.
 
@@ -22,3 +22,4 @@ Tracking table for dataset/resource links shared for this project.
 | Greenhouse Gas Emissions Projections (dataset page) | https://open.canada.ca/data/en/dataset/2ff017d8-e122-4d6b-a394-f919b64018cc | 2026-03-11 | Open Canada catalog entry; direct CSV resources available in English and French. | Third CSV-first beginner notebook focused on historical vs projection scenario comparison. |
 | Greenhouse Gas Emissions Projections (English CSV: `ghg-emissions-projections-en.csv`) | https://www.canada.ca/content/dam/eccc/documents/csv/cesindicators/ghg-projections/2025/ghg-emissions-projections-en.csv | 2026-03-11 | Public direct CSV (Latin-1 encoding). | Source for `notebooks/csv/ghg-emissions-projections-exploration.ipynb`. |
 | Greenhouse Gas Emissions Projections (French CSV: `projections-emissions-ges-fr.csv`) | https://www.canada.ca/content/dam/eccc/documents/csv/cesindicators/ghg-projections/2025/projections-emissions-ges-fr.csv | 2026-03-11 | Public direct CSV. | French counterpart for bilingual reference and future adaptation. |
+| Ontario 511 Carpool Lots (JSON) | https://511on.ca/api/v2/get/carpoollots | 2026-03-12 | Public 511ON JSON data endpoint. Confirm attribution/terms on 511ON before publication or redistribution. | Interactive map of `LocationDescription` points with lat/lon in `notebooks/json/511on-carpool-lots-map-exploration.ipynb`. |
