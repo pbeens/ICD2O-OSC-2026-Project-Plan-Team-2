@@ -76,6 +76,19 @@ When Yolanda sends a new dataset/resource link:
 - When cleaning data, explain `NaN` in plain language and explain commands used (for example `dropna()`, `drop(index=...)`, `errors="ignore"`, `copy()`).
 - Avoid unnecessary transformation steps; only include cleanup logic that is actually needed by the current dataset.
 
+## Beginner Tutorial Requirements
+- Treat every beginner tutorial in `lessons/` as if the student may have zero prior exposure to programming or data-analysis vocabulary.
+- Define unfamiliar terms the first time they appear in the tutorial, especially terms like Python, Jupyter Notebook, library, `import`, `pandas`, `plotly`, DataFrame, variable, method, property, CSV, dataset, column, row, index, kernel/runtime, and `NaN`.
+- Do not assume students know what a tool is just because it appears in code. Add a plain-language explanation before or immediately after the code example.
+- For each step in a beginner tutorial, include:
+  - a short big-picture explanation of why the step exists,
+  - the code or concept,
+  - a plain-language explanation of what key commands/terms mean,
+  - and why that step matters to the overall workflow.
+- Prefer over-explaining unfamiliar vocabulary rather than leaving gaps that force a student to guess.
+- When using code examples, explain nicknames and shorthand such as `as pd`, `as px`, and `df`.
+- Tutorials should help a student understand both what to type and what the words mean.
+
 ## Required Colab Link Footer (Every Notebook)
 Add a final Markdown cell at the bottom of each notebook:
 
@@ -155,6 +168,5 @@ A repository-local skill is a set of instructions stored under `skills/` that ag
 - Scope: Use only the parts of the skill that are necessary for the current request; do not load unrelated references or scripts unless the skill requires them.
 - Path resolution: Resolve any relative paths in a repository skill relative to that skill's own folder first.
 - Fallback: If a skill is missing files, does not fit the task cleanly, or conflicts with higher-priority instructions, state that briefly and continue with the best direct approach.
-
 
 
