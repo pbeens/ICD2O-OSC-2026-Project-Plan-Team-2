@@ -1,4 +1,4 @@
-# Project Plan Team 2
+﻿# Project Plan Team 2
 
 ## 1\. Course Information
 
@@ -17,9 +17,9 @@
 
 **Student-Friendly Learning Goals:**
 
-* I will learn to…  
-* I will be able to…  
-* I will demonstrate…
+* I will learn toâ€¦  
+* I will be able toâ€¦  
+* I will demonstrateâ€¦
 
 **Teacher Assignment Design Framework:**  
 PACT (Process, Agency, Context, Transparent AI Use)  
@@ -66,10 +66,10 @@ Final Product Format:
 
 Active lesson files (links):
 
-* lesson-plans/<lesson-file-1>.md
-* lesson-plans/<lesson-file-2>.md
-* lesson-plans/<tutorial-file-1>.md
-* lesson-plans/<tutorial-file-2>.md
+* lessons/<lesson-file-1>.md
+* lessons/<lesson-file-2>.md
+* lessons/<tutorial-file-1>.md
+* lessons/<tutorial-file-2>.md
 
 Document flow:
 
@@ -82,12 +82,12 @@ Document flow:
 
 | Phase | Focus | Formative Feedback? |
 | ----- | ----- | ----- |
-| Research/Inquiry |  | ☐ Yes ☐ No |
-| Draft/Development |  | ☐ Yes ☐ No |
-| Revision |  | ☐ Yes ☐ No |
+| Research/Inquiry |  | â˜ Yes â˜ No |
+| Draft/Development |  | â˜ Yes â˜ No |
+| Revision |  | â˜ Yes â˜ No |
 | Final Submission |  |  |
 
-## 7\. Assessment Plan (Growing Success–Aligned)
+## 7\. Assessment Plan (Growing Successâ€“Aligned)
 
 ### **Evaluation Based On:**
 
@@ -99,12 +99,12 @@ Document flow:
 | Application |  |
 
 **Success Criteria Shared With Students:**  
-☐ Yes ☐ No
+â˜ Yes â˜ No
 
 **Triangulation of Evidence:**  
-☐ Observation  
-☐ Conversation  
-☐ Product
+â˜ Observation  
+â˜ Conversation  
+â˜ Product
 
 ## 8\. Careers & Pathways ConnectionNEW
 
@@ -147,3 +147,4 @@ TBD
 ### Safety Considerations:
 
 ### Potential Implementation Risks & Mitigation:
+

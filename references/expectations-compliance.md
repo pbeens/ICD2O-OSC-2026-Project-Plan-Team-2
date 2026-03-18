@@ -2,7 +2,7 @@
 
 ## Scope
 - Source expectations: `resources/ICD2O_2023.md`
-- Evidence mapping source: `lesson-plans/*-lesson-plan.md`
+- Evidence mapping source: `lessons/*-lesson-plan.md`
 - Coverage basis: **specific expectations only** (`A#.#`, `B#.#`, `C#.#`)
 
 ## Summary
@@ -61,4 +61,5 @@
 ## Notes
 - This tracker should be updated whenever lesson plans are added, removed, or re-scoped.
 - Coverage here indicates explicit mapping in lesson plans; it does not imply full mastery depth.
+
 

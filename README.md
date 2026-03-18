@@ -15,7 +15,7 @@ Resource and analysis workspace for developing the ICD2O project plan.
   - `notebooks/excel/`
   - `notebooks/json/`
 - `references/`: source lists, summaries, and planning documents.
-- `lesson-plans/`: 5E lesson plans based on selected beginner notebooks.
+- `lessons/`: 5E lesson plans based on selected beginner notebooks.
 - `logs/` (optional): ingestion or processing notes.
 
 Create folders as needed when they are first used.
@@ -94,15 +94,15 @@ Dataset/resource intake is tracked in:
 - `references/pact-framework.md` (PACT framework used for assignment design in an AI-rich classroom)
 
 ## Document Flow
-- `lesson-plans/NN-topic-lesson-plan.md`: teacher planning and pacing (what will be taught)
-- `lesson-plans/NN-topic-tutorial.md`: detailed concept/code walkthrough (how to teach/learn it)
+- `lessons/NN-topic-lesson-plan.md`: teacher planning and pacing (what will be taught)
+- `lessons/NN-topic-tutorial.md`: detailed concept/code walkthrough (how to teach/learn it)
 - `notebooks/.../NN-topic-exploration.ipynb`: runnable student analysis workflow (where execution happens)
-- `lesson-plans/NN-topic-assignment.md`: student-facing assignment artifact (what students submit/work through)
+- `lessons/NN-topic-assignment.md`: student-facing assignment artifact (what students submit/work through)
 
 ## Lesson Plans
-- `lesson-plans/00-data-analysis-big-picture-lesson-plan.md` (big-picture intro to data analysis and IPO model)
-- `lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md` (Jupyter workflow foundations)
-- `lesson-plans/02-extreme-heat-events-lesson-plan.md` (first full beginner dataset analysis lesson)
+- `lessons/00-data-analysis-big-picture-lesson-plan.md` (big-picture intro to data analysis and IPO model)
+- `lessons/01-jupyter-notebooks-foundations-lesson-plan.md` (Jupyter workflow foundations)
+- `lessons/02-extreme-heat-events-lesson-plan.md` (first full beginner dataset analysis lesson)
 
 ## Resources Workflow
 - `resources/README.md` (PDF-to-Markdown workflow and lesson-planning resource guidance)
@@ -116,4 +116,5 @@ Dataset/resource intake is tracked in:
 - Do not overwrite user-created analysis without explicit request.
 - If data is downloaded/transformed, note notebook and output location.
 - Flag uncertain licensing or source credibility before use.
+
 

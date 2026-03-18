@@ -75,12 +75,12 @@ Final Product Format:
 - Report / Presentation / Prototype / Performance / Portfolio / Other: Notebook outputs + short written reflections
 
 Active lesson files:
-- [lesson-plans/00-data-analysis-big-picture-lesson-plan.md](lesson-plans/00-data-analysis-big-picture-lesson-plan.md)
-- [lesson-plans/00-data-analysis-big-picture-tutorial.md](lesson-plans/00-data-analysis-big-picture-tutorial.md)
-- [lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md](lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md)
-- [lesson-plans/01-jupyter-notebooks-foundations-tutorial.md](lesson-plans/01-jupyter-notebooks-foundations-tutorial.md)
-- [lesson-plans/02-extreme-heat-events-lesson-plan.md](lesson-plans/02-extreme-heat-events-lesson-plan.md)
-- [lesson-plans/02-extreme-heat-events-tutorial.md](lesson-plans/02-extreme-heat-events-tutorial.md)
+- [lessons/00-data-analysis-big-picture-lesson-plan.md](lessons/00-data-analysis-big-picture-lesson-plan.md)
+- [lessons/00-data-analysis-big-picture-tutorial.md](lessons/00-data-analysis-big-picture-tutorial.md)
+- [lessons/01-jupyter-notebooks-foundations-lesson-plan.md](lessons/01-jupyter-notebooks-foundations-lesson-plan.md)
+- [lessons/01-jupyter-notebooks-foundations-tutorial.md](lessons/01-jupyter-notebooks-foundations-tutorial.md)
+- [lessons/02-extreme-heat-events-lesson-plan.md](lessons/02-extreme-heat-events-lesson-plan.md)
+- [lessons/02-extreme-heat-events-tutorial.md](lessons/02-extreme-heat-events-tutorial.md)
 
 Document flow:
 - Lesson plan: defines learning goals, sequence, and assessment intent.
@@ -176,4 +176,5 @@ Document flow:
 - Risk: students run cells out of order. Mitigation: explicit top-to-bottom execution routines.
 - Risk: technical setup issues. Mitigation: provide Colab fallback and starter cells.
 - Risk: overload in first coding lesson. Mitigation: keep Lesson 00 and Lesson 01 concept/procedure focused.
+
 

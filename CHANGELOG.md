@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 Repository changes are tracked by date rather than release version.
 
@@ -23,4 +23,5 @@ Repository changes are tracked by date rather than release version.
 - Updated [README.md](/Volumes/SSD-2TB/GitHub/ICD2O-OSC-2026-Project-Plan-Team-2/README.md) to mention the `resources/` workflow and Markdown-first ingestion guidance.
 
 ### Repository Structure
-- Added the `lesson-plans/` folder for lesson plan outputs.
+- Added the `lessons/` folder for lesson plan outputs.
+

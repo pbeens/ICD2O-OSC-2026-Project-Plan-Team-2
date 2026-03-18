@@ -119,8 +119,8 @@ Colab link validation technique:
 - In lesson plans, format `Curriculum Expectations` as a bulleted list, with one expectation per bullet.
 - In lesson plans, format `Learning Goals` as a bulleted list, with one goal per bullet.
 - In lesson plans, format `Materials/Resources` as a bulleted list, with one material/resource per bullet.
-- For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lesson-plans/` for detailed, step-by-step concept and code explanations.
-- Store lesson plan and companion tutorial in the same `lesson-plans/` folder using matched names when possible (for example, `01-topic-lesson-plan.md` and `01-topic-tutorial.md`).
+- For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lessons/` for detailed, step-by-step concept and code explanations.
+- Store lesson plan and companion tutorial in the same `lessons/` folder using matched names when possible (for example, `01-topic-lesson-plan.md` and `01-topic-tutorial.md`).
 - In the 5E lesson plan `Materials/Resources`, include a bullet linking to the companion tutorial file.
 - Use sequential lesson numbering for pathway clarity (for example: `Lesson 00` big-picture foundations, `Lesson 01` tools/workflow, then dataset analysis lessons).
 - Lesson plan filenames should start with the lesson number: `NN-topic-lesson-plan.md` and `NN-topic-tutorial.md`.
@@ -155,5 +155,6 @@ A repository-local skill is a set of instructions stored under `skills/` that ag
 - Scope: Use only the parts of the skill that are necessary for the current request; do not load unrelated references or scripts unless the skill requires them.
 - Path resolution: Resolve any relative paths in a repository skill relative to that skill's own folder first.
 - Fallback: If a skill is missing files, does not fit the task cleanly, or conflicts with higher-priority instructions, state that briefly and continue with the best direct approach.
+
 
 

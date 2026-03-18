@@ -1,4 +1,4 @@
----
+﻿---
 name: create-assignment
 description: Generate paste-ready prompts for the Assignment Strengthener GPT when the user asks to create or strengthen an assignment for a specific lesson, topic, or notebook. Use for requests like "create assignment for lesson 02" and return the direct GPT link plus exact prompt text. Also use for pasted GPT output cleanup/writeback into repository assignment files.
 ---
@@ -8,7 +8,7 @@ description: Generate paste-ready prompts for the Assignment Strengthener GPT wh
 ## Overview
 Support two workflows:
 - Prompt mode: Build a paste-ready prompt for Assignment Strengthener.
-- Writeback mode: Clean pasted Assignment Strengthener output and save a finalized assignment file in `lesson-plans/`.
+- Writeback mode: Clean pasted Assignment Strengthener output and save a finalized assignment file in `lessons/`.
 
 Assignment Strengthener URL:
 `https://chatgpt.com/g/g-6921ca06cf208191b9f8374abc30f632-assignment-strengthener`
@@ -17,8 +17,8 @@ Assignment Strengthener URL:
 ### Mode A: Prompt Generation
 1. Resolve target lesson from user input.
 2. Read matching lesson files:
-- `lesson-plans/NN-...-lesson-plan.md`
-- `lesson-plans/NN-...-tutorial.md` (if present)
+- `lessons/NN-...-lesson-plan.md`
+- `lessons/NN-...-tutorial.md` (if present)
 3. Build a structured prompt with lesson context and assignment requirements.
 4. Include expectations as `code + full expectation text`, one per line.
 5. Provide optional attachment checklist (lesson plan/tutorial/notebook).
@@ -33,7 +33,7 @@ Assignment Strengthener URL:
 - keep gist unchanged unless user requests deeper edits
 - preserve `Teacher Notes (PACT-Based Rationale)` when present
 - add `Teacher Notes (PACT-Based Rationale)` when the user explicitly requests it
-4. Save as `lesson-plans/NN-topic-assignment.md`.
+4. Save as `lessons/NN-topic-assignment.md`.
 5. Report file path and key edits made.
 
 ## Prompt Construction Rules
@@ -64,3 +64,4 @@ Do not require attaching `references/expectations-compliance.md`.
 - Confirm lesson filenames match repository naming conventions.
 - Confirm expectation codes exist in `resources/ICD2O_2023.md`.
 - Confirm final prompt includes one-per-line expectation entries with code and full text.
+
