@@ -38,14 +38,7 @@ Source: [references/expectations-compliance.md](references/expectations-complian
 - C3. Modularity and Modification
 
 ### Specific Expectations Addressed:
-
-- A1.1, A1.2, A2.1, A3.1
-- B2.1, B2.2
-- C2.2
-- C3.1, C3.2, C3.4
-
-(Additional mapping can be added if more expectations are included in later lessons.)
-Linked compliance map: [references/expectations-compliance.md](references/expectations-compliance.md)
+[references/expectations-compliance.md](references/expectations-compliance.md)
 
 ## 4. Defined Scope
 
