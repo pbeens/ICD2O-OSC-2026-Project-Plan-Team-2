@@ -23,6 +23,10 @@ This project builds a beginner-friendly path into data analysis using authentic 
 - I will be able to clean and analyze a beginner-level dataset using Python.
 - I will demonstrate evidence-based conclusions from a chart.
 
+**Teacher Assignment Design Framework:**  
+PACT (Process, Agency, Context, Transparent AI Use)  
+Reference: [references/pact-framework.md](references/pact-framework.md)
+
 ## 3. Curriculum Alignment (Mandatory)
 
 **% of Expectations Covered (Specific Expectations):** 25.64%  
@@ -77,6 +81,12 @@ Active lesson files:
 - [lesson-plans/01-jupyter-notebooks-foundations-tutorial.md](lesson-plans/01-jupyter-notebooks-foundations-tutorial.md)
 - [lesson-plans/02-extreme-heat-events-lesson-plan.md](lesson-plans/02-extreme-heat-events-lesson-plan.md)
 - [lesson-plans/02-extreme-heat-events-tutorial.md](lesson-plans/02-extreme-heat-events-tutorial.md)
+
+Document flow:
+- Lesson plan: defines learning goals, sequence, and assessment intent.
+- Tutorial: provides detailed teaching/explanation walkthrough.
+- Notebook: provides runnable student workflow and outputs.
+- Assignment: provides student-facing task and submission expectations.
 
 ## 6. Timeline & Milestones
 

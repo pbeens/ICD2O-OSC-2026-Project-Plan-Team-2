@@ -21,6 +21,10 @@
 * I will be able to…  
 * I will demonstrate…
 
+**Teacher Assignment Design Framework:**  
+PACT (Process, Agency, Context, Transparent AI Use)  
+Reference: `references/pact-framework.md`
+
 ## 3\. Curriculum Alignment (Mandatory)
 
 ### **Overall Expectations Addressed:**
@@ -66,6 +70,13 @@ Active lesson files (links):
 * lesson-plans/<lesson-file-2>.md
 * lesson-plans/<tutorial-file-1>.md
 * lesson-plans/<tutorial-file-2>.md
+
+Document flow:
+
+* Lesson plan -> defines goals, sequence, and assessment intent
+* Tutorial -> detailed teaching/explanation walkthrough
+* Notebook -> runnable workflow and outputs
+* Assignment -> student-facing task artifact
 
 ## 6\. Timeline & Milestones
 
