@@ -13,6 +13,12 @@
 - Build Jupyter notebooks for exploration, cleaning, analysis, and project planning evidence.
 - Keep work reproducible and easy to open in both local Jupyter and Google Colab.
 
+## Curriculum Source Of Truth
+- The active curriculum document for this repository is `resources/ICD2O_2023.md`.
+- The active assessment/pedagogy reference for this repository is `resources/growSuccess.md`.
+- For lesson planning work, map expectations and learning goals to `resources/ICD2O_2023.md`, and align assessment/evaluation approaches with `resources/growSuccess.md`.
+- Use `resources/5E Lesson Plan Template.md` as the lesson plan format template, and use both `resources/ICD2O_2023.md` and `resources/growSuccess.md` for lesson requirement content.
+
 ## Expected Repository Structure
 - `datasets/`
   - Optional local sample files or metadata notes.
@@ -104,6 +110,8 @@ Colab link validation technique:
 - For files in `resources/`, treat Markdown as the ingestion format and PDF as the source/archive format.
 - If both `resources/name.md` and `resources/name.pdf` exist, prefer the Markdown file for AI ingestion and skip the PDF unless the original document is needed for verification.
 - Use `resources/5E Lesson Plan Template.md` as the default template for all lesson plan creation unless the user explicitly requests a different format.
+- For ICD2O lesson requirements, use `resources/ICD2O_2023.md` as the authoritative curriculum reference unless the user explicitly provides a replacement.
+- For assessment and evaluation design in lesson plans, use `resources/growSuccess.md` as the authoritative policy reference unless the user explicitly provides a replacement.
 - For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
 - For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 
