@@ -24,7 +24,8 @@ This project builds a beginner-friendly path into data analysis using authentic 
 - I will demonstrate evidence-based conclusions from a chart.
 
 **Teacher Assignment Design Framework:**  
-PACT (Process, Agency, Context, Transparent AI Use)  
+PACT (Process, not Product | Agency and Student Voice | Context and Lived Experience | Transparent AI Use)
+
 Reference: [references/pact-framework.md](references/pact-framework.md)
 
 ## 3. Curriculum Alignment (Mandatory)
