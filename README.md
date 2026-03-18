@@ -1,5 +1,8 @@
 ﻿# ICD2O OSC 2026 Project Plan Team 2
 
+Main page: [Project Plan Team 2](Project%20Plan%20Team%202.md)
+
+
 Resource and analysis workspace for developing the ICD2O project plan.
 
 ## Project Goals
