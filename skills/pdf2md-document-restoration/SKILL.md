@@ -13,7 +13,7 @@ Use it for:
 - technical manuals
 - academic or reference PDFs
 
-The goal is a single high-quality Markdown output, not a benchmark or comparison between multiple conversion methods.
+The goal is a single high-quality Markdown output. MarkItDown is used as a baseline extraction reference for fidelity checking, not as a multi-method benchmark workflow.
 
 ## Repository Workflow
 
@@ -25,6 +25,12 @@ The goal is a single high-quality Markdown output, not a benchmark or comparison
 - Keep the base filename aligned where practical, for example:
   - `resources/growSuccess.pdf`
   - `resources/growSuccess.md`
+  - `resources/growSuccess.markitdown.txt`
+
+### MarkItDown Baseline
+- Generate a baseline text extraction with MarkItDown for each PDF conversion.
+- Save it beside the PDF as `name.markitdown.txt`.
+- Use it as a fidelity reference to spot missing sections, headings, or tables in the cleaned Markdown output.
 
 ## Core Rules
 
@@ -73,8 +79,21 @@ The file must pass with exit code `0`.
 Before considering the conversion done:
 1. Confirm the file contains Markdown headings.
 2. Confirm the table of contents has been reconstructed if the PDF includes one.
-3. Run `python3 utils/check_noise.py <markdown_file>` and confirm there are no noise runs.
-4. Skim the top, one or two middle sections, and the end for extraction artifacts.
+3. Generate a MarkItDown baseline:
+
+```bash
+python3 utils/generate_markitdown_baseline.py <pdf_file>
+```
+
+4. Compare the cleaned Markdown against the `name.markitdown.txt` baseline to check for obvious omissions.
+5. Run the structure check to confirm PDF TOC headings survived as Markdown headings:
+
+```bash
+python3 utils/check_pdf_conversion_structure.py <pdf_file> <markdown_file>
+```
+
+6. Run `python3 utils/check_noise.py <markdown_file>` and confirm there are no noise runs.
+7. Skim the top, one or two middle sections, and the end for extraction artifacts.
 
 Optional cleanup:
 
@@ -83,6 +102,10 @@ python3 utils/fix_markdown_lints.py <markdown_file>
 ```
 
 Use this only as a final formatting pass. Do not rely on it to repair content loss or major structural problems.
+
+## Structure Failure Rule
+
+If the PDF table of contents contains a heading such as `Strand A`, `A1`, or `Introduction`, and the Markdown contains the text only as body text instead of a heading, the conversion is not acceptable yet.
 
 ## Large Document Protocol
 

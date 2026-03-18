@@ -100,9 +100,12 @@ Colab link validation technique:
 - If a notebook is created or renamed, ensure its Colab footer link matches the new path.
 - Keep keyword sections alphabetized by keyword name (for example, `## Keywords` in reference manuals).
 - When uncertain about data licensing or source credibility, flag it in notes before use.
+- When running Python commands in this repository, prefer the project virtual environment at `.venv` when it exists.
 - For files in `resources/`, treat Markdown as the ingestion format and PDF as the source/archive format.
 - If both `resources/name.md` and `resources/name.pdf` exist, prefer the Markdown file for AI ingestion and skip the PDF unless the original document is needed for verification.
 - Use `resources/5E Lesson Plan Template.md` as the default template for all lesson plan creation unless the user explicitly requests a different format.
+- For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
+- For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 
 ## Definition of Done For New Notebook Creation
 - Notebook saved under `notebooks/` with clear name.
@@ -115,7 +118,7 @@ Colab link validation technique:
 A repository-local skill is a set of instructions stored under `skills/` that agents should use when the task clearly matches the skill.
 
 ### Available repository skills
-- `pdf2md-document-restoration`: High-fidelity conversion and cleanup of PDF documents into Markdown for this repository, especially for government documents, curriculum resources, technical manuals, and academic references. Use when the user wants a PDF made easier to ingest or reuse in lesson-planning work. The related helper utilities are `utils/check_noise.py` and `utils/fix_markdown_lints.py`. (file: `skills/pdf2md-document-restoration/SKILL.md`)
+- `pdf2md-document-restoration`: High-fidelity conversion and cleanup of PDF documents into Markdown for this repository, especially for government documents, curriculum resources, technical manuals, and academic references. Use when the user wants a PDF made easier to ingest or reuse in lesson-planning work. The related helper utilities are `utils/generate_markitdown_baseline.py`, `utils/check_pdf_conversion_structure.py`, `utils/check_noise.py`, and `utils/fix_markdown_lints.py`. (file: `skills/pdf2md-document-restoration/SKILL.md`)
 
 ### How to use repository skills
 - Discovery: Check `skills/` for repository-local skills before inventing a custom workflow for specialized tasks.

@@ -54,6 +54,7 @@ pip install -r requirements.txt
 ```
 
 Core libraries used in notebooks include `pandas`, `numpy`, `plotly`, and `geopandas`.
+The repository also uses `markitdown[pdf]` for PDF-to-text baseline extraction in the `resources/` workflow.
 
 ### 4) Start Jupyter
 ```powershell
@@ -90,6 +91,7 @@ Dataset/resource intake is tracked in:
 - Resource files such as PDFs can be placed in `resources/` and a conversion request can be given to turn them into Markdown.
 - After conversion, the original PDFs can be deleted if desired.
 - Markdown files are usually better than PDFs for AI ingestion because the text is easier to parse, search, chunk, and reuse reliably.
+- The PDF workflow also creates a MarkItDown baseline text file for fidelity checking against the cleaned Markdown output.
 
 ## Working Notes
 - Keep documentation current when notebooks or data sources are added.

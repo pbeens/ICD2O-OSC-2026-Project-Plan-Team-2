@@ -21,10 +21,13 @@ Examples:
 When converting a PDF in this repository:
 
 1. Put the source PDF in `resources/`.
-2. Create a Markdown version in the same folder.
-3. Preserve the document's structure using Markdown headings, lists, and tables where possible.
-4. Remove structural noise such as repeated running headers, page numbers, and rotated sidebar artifacts.
-5. Reconstruct the table of contents as a Markdown table if the PDF includes one.
+2. Create a MarkItDown baseline text file in the same folder.
+3. Create a cleaned Markdown version in the same folder.
+4. Preserve the document's structure using Markdown headings, lists, and tables where possible.
+5. Remove structural noise such as repeated running headers, page numbers, and rotated sidebar artifacts.
+6. Reconstruct the table of contents as a Markdown table if the PDF includes one.
+7. Compare the cleaned Markdown against the MarkItDown baseline to help detect missing content.
+8. Run the structure check so PDF TOC headings are confirmed to exist as Markdown headings, not just as plain body text.
 
 ## Ingestion Rule
 
@@ -35,6 +38,28 @@ For AI ingestion and document-loading workflows:
 - Prefer loading `*.md` files and ignoring `*.pdf` files unless the original PDF is specifically needed for verification.
 
 ## Helper Utilities
+
+Create a MarkItDown baseline text file from a PDF:
+
+```bash
+python3 utils/generate_markitdown_baseline.py resources/<file>.pdf
+```
+
+This produces:
+
+```text
+resources/<file>.markitdown.txt
+```
+
+Use this baseline text file as a fidelity reference while reviewing the cleaned Markdown output.
+
+Validate PDF TOC headings against the Markdown structure:
+
+```bash
+python3 utils/check_pdf_conversion_structure.py resources/<file>.pdf resources/<file>.md
+```
+
+This catches problems where a heading such as `Strand A` or `A1` is present only as paragraph text instead of a real Markdown heading.
 
 Check for rotated-sidebar / word-salad noise:
 
