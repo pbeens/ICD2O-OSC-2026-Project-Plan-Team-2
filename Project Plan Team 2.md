@@ -122,12 +122,12 @@ Active lesson files:
 
 ## 9. Learning Skills & Work Habits (Reported Separately)
 
-- Responsibility
-- Organization
-- Independent Work
-- Collaboration
-- Initiative
-- Self-Regulation
+- Responsibility: Complete tasks and commitments reliably, including deadlines and class expectations.
+- Organization: Use time, materials, and workflow steps effectively to keep learning on track.
+- Independent Work: Follow instructions and solve manageable problems with minimal prompting.
+- Collaboration: Contribute respectfully and productively when working with peers.
+- Initiative: Show curiosity, ask useful questions, and take next steps without waiting to be told.
+- Self-Regulation: Set goals, monitor progress, and adjust effort/strategies when challenges appear.
 
 (Observed through on-task workflow, checkpoint completion, revision effort, and reflection quality.)
 
