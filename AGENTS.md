@@ -18,6 +18,9 @@
 - The active assessment/pedagogy reference for this repository is `resources/growSuccess.md`.
 - For lesson planning work, map expectations and learning goals to `resources/ICD2O_2023.md`, and align assessment/evaluation approaches with `resources/growSuccess.md`.
 - Use `resources/5E Lesson Plan Template.md` as the lesson plan format template, and use both `resources/ICD2O_2023.md` and `resources/growSuccess.md` for lesson requirement content.
+- Use `resources/Project Plan Template.md` as the template for the root-level project plan front-end document.
+- The active root-level project plan document is `Project Plan Team 2.md`.
+- Track curriculum coverage in `references/expectations-compliance.md`.
 
 ## Expected Repository Structure
 - `datasets/`
@@ -112,6 +115,18 @@ Colab link validation technique:
 - Use `resources/5E Lesson Plan Template.md` as the default template for all lesson plan creation unless the user explicitly requests a different format.
 - For ICD2O lesson requirements, use `resources/ICD2O_2023.md` as the authoritative curriculum reference unless the user explicitly provides a replacement.
 - For assessment and evaluation design in lesson plans, use `resources/growSuccess.md` as the authoritative policy reference unless the user explicitly provides a replacement.
+- In lesson plans, format `Curriculum Expectations` as a bulleted list, with one expectation per bullet.
+- In lesson plans, format `Learning Goals` as a bulleted list, with one goal per bullet.
+- In lesson plans, format `Materials/Resources` as a bulleted list, with one material/resource per bullet.
+- For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lesson-plans/` for detailed, step-by-step concept and code explanations.
+- Store lesson plan and companion tutorial in the same `lesson-plans/` folder using matched names when possible (for example, `lesson-01-topic-5e.md` and `lesson-01-topic-tutorial.md`).
+- In the 5E lesson plan `Materials/Resources`, include a bullet linking to the companion tutorial file.
+- Use sequential lesson numbering for pathway clarity (for example: `Lesson 00` big-picture foundations, `Lesson 01` tools/workflow, then dataset analysis lessons).
+- Keep `Project Plan Team 2.md` synchronized with lesson-plan sequencing, major deliverables, and assessment approach whenever lessons are added, renamed, or re-scoped.
+- When lesson sequence changes, update both `Project Plan Team 2.md` and the lesson list in `README.md` in the same edit pass.
+- When lesson mappings change, update `references/expectations-compliance.md` in the same edit pass, including covered and not-yet-covered expectations.
+- In `Project Plan Team 2.md`, maintain a `% of Expectations Covered` metric that matches `references/expectations-compliance.md` (specific expectations basis).
+- In `Project Plan Team 2.md`, place document links inside existing sections (for example: compliance links in Curriculum Alignment, lesson links in Deliverables, and file/resource links in Resources & Risk), instead of creating an extra standalone links section.
 - For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
 - For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 
@@ -134,3 +149,4 @@ A repository-local skill is a set of instructions stored under `skills/` that ag
 - Scope: Use only the parts of the skill that are necessary for the current request; do not load unrelated references or scripts unless the skill requires them.
 - Path resolution: Resolve any relative paths in a repository skill relative to that skill's own folder first.
 - Fallback: If a skill is missing files, does not fit the task cleanly, or conflicts with higher-priority instructions, state that briefly and continue with the best direct approach.
+
