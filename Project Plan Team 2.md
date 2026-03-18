@@ -98,6 +98,12 @@ Document flow:
 - Notebook: provides runnable student workflow and outputs.
 - Assignment: provides student-facing task and submission expectations.
 
+Recommended teacher use order:
+1. Review the lesson plan first.
+2. Open the companion tutorial next to prepare the vocabulary and modelling sequence.
+3. Open the notebook after the tutorial if the lesson includes one.
+4. Use the assignment after the guided lesson workflow is complete.
+
 ## 6. Timeline & Milestones
 
 | Phase | Focus | Formative Feedback? |

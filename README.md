@@ -102,6 +102,12 @@ Dataset/resource intake is tracked in:
 - `notebooks/.../NN-topic-exploration.ipynb`: runnable student analysis workflow (where execution happens)
 - `lessons/NN-topic-assignment.md`: student-facing assignment artifact (what students submit/work through)
 
+Recommended teacher use order:
+1. Read the lesson plan first.
+2. Open the companion tutorial next.
+3. Open the notebook after the tutorial, if the lesson includes one.
+4. Open or distribute the assignment after students have completed the guided learning sequence.
+
 ## Lesson Plans
 - `lessons/00-data-analysis-big-picture-lesson-plan.md` (big-picture intro to data analysis and IPO model)
 - `lessons/01-jupyter-notebooks-foundations-lesson-plan.md` (Jupyter workflow foundations)
@@ -119,5 +125,4 @@ Dataset/resource intake is tracked in:
 - Do not overwrite user-created analysis without explicit request.
 - If data is downloaded/transformed, note notebook and output location.
 - Flag uncertain licensing or source credibility before use.
-
 

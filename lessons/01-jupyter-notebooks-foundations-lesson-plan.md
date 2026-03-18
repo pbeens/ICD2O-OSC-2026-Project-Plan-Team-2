@@ -1,5 +1,11 @@
 ﻿# Lesson 01: Jupyter Notebook Foundations for Data Analysis[^1]
 
+## Related Lesson Files
+- Lesson plan: [01-jupyter-notebooks-foundations-lesson-plan.md](01-jupyter-notebooks-foundations-lesson-plan.md)
+- Tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md)
+- Notebook: not yet created
+- Assignment: not yet created
+
 ## Course
 
 | ICD2O Digital Technology and Innovations in the Changing World |
@@ -35,6 +41,16 @@ Students will be able to:
 ## Materials/Resources
 
 | - Companion tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md)<br>- Jupyter Notebook or Google Colab access<br>- Starter notebook file (blank is fine)<br>- Curriculum reference: `resources/ICD2O_2023.md`<br>- Assessment/evaluation policy reference: `resources/growSuccess.md` |
+| :---- |
+
+## Teacher Prep And Opening Sequence
+
+| 1. Review this lesson plan for the workflow goals and troubleshooting focus.<br>2. Open the companion tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md) so the definitions of notebook, cell, library, import, DataFrame, method, and property are ready for modelling.<br>3. Open Jupyter Notebook or Google Colab before class and prepare a blank starter notebook students can copy from or follow live.<br>4. Confirm students know how they will access the notebook environment during class.<br>5. Begin by showing the difference between a plain script and a notebook before students create their own cells. |
+| :---- |
+
+## Activity List
+
+| 1. Opening comparison: students compare a plain script view to a notebook view and discuss which is easier for learning.<br>2. Notebook setup: students open Jupyter or Colab and create a new notebook.<br>3. Cell practice: students add one markdown cell and one code cell, then run them in order.<br>4. Vocabulary mini-lesson: teacher explains import, library, DataFrame, method, property, kernel/runtime, and execution order using the companion tutorial.<br>5. Guided mini-sequence: students import libraries, create a tiny DataFrame, preview rows, inspect columns, and make a simple chart.<br>6. Troubleshooting practice: students restart the kernel/runtime and rerun all cells from top to bottom.<br>7. Reflection/checkpoint: students explain one execution-order mistake and how to fix it. |
 | :---- |
 
 ## Lesson Body
@@ -74,8 +90,7 @@ Students will be able to:
 
 ## Comments
 
-| Keep this lesson procedural and confidence-building. Use short cells and immediate feedback to reduce beginner frustration. |
+| Keep this lesson procedural and confidence-building. Use short cells and immediate feedback to reduce beginner frustration. After reviewing the lesson plan, the teacher should open the companion tutorial first and then the notebook environment so modelling follows the same order students will experience. |
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)
-

@@ -1,5 +1,11 @@
 # Lesson 00 Assignment: What Is Data Analysis and Why Does It Matter?
 
+## Related Lesson Files
+- Lesson plan: [00-data-analysis-big-picture-lesson-plan.md](00-data-analysis-big-picture-lesson-plan.md)
+- Tutorial: [00-data-analysis-big-picture-tutorial.md](00-data-analysis-big-picture-tutorial.md)
+- Notebook: not yet created
+- Assignment: [00-data-analysis-big-picture-assignment.md](00-data-analysis-big-picture-assignment.md)
+
 ## Purpose
 In this task, you will build a clear understanding of what data analysis is, how it works using the IPO model, and how it helps people make better decisions in real life.
 

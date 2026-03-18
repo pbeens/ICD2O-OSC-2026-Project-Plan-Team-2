@@ -1,84 +1,123 @@
 ﻿# Beginner Tutorial: Jupyter Notebook Foundations (Lesson 01)
 
-## Purpose
-This walkthrough teaches notebook mechanics before full dataset analysis.
+## Related Lesson Files
+- Lesson plan: [01-jupyter-notebooks-foundations-lesson-plan.md](01-jupyter-notebooks-foundations-lesson-plan.md)
+- Tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md)
+- Notebook: not yet created
+- Assignment: not yet created
 
-This lesson assumes students may be completely new to coding. The goal is not speed. The goal is understanding the workspace and the meaning of the main words they will see.
+## Chapter Purpose
+This chapter introduces the workspace students will use for beginner data analysis. In the previous lesson, students learned the big picture: data analysis is a process that moves from input to process to output. In this lesson, students begin learning the actual environment where that work happens.
 
-## What Is a Jupyter Notebook?
-A Jupyter Notebook is an interactive document with:
-- Markdown cells (text/explanations)
-- Code cells (Python commands)
-- Output cells (results, tables, charts)
+For many beginners, a notebook is unfamiliar. Even the basic words can feel new: notebook, cell, code, markdown, output, kernel, import, library. If those terms are not explained carefully, students may follow steps without understanding what they are doing. That is why this tutorial is written more like a chapter than a quick reference. The goal is to make the notebook environment feel understandable and predictable.
 
-In plain language:
-- A **Jupyter Notebook** is a digital worksheet where we can write explanations and run code in the same file.
-- **Interactive** means we do not just read it. We can run parts of it and see results right away.
-- **Python** is a programming language. It is the language we will use in these notebooks.
+## What A Jupyter Notebook Is
+A **Jupyter Notebook** is an interactive digital document where text, code, and results live together in one place.
 
-Many beginners are surprised that a notebook is not just one block of code. It is designed for step-by-step work. That is why it is useful for learning.
+That description matters because a notebook is not just a coding file. It is closer to a lab workbook. A student can:
+- write a title or explanation,
+- run code,
+- see the result immediately,
+- then keep writing notes underneath.
 
-## Why It Is Useful
-- Combines explanation + code + results in one place
-- Easier for step-by-step learning
-- Supports reproducible analysis when run top-to-bottom
+This is one reason notebooks are so useful for learning. They let students see a process unfold step by step.
 
-**Reproducible** means that if someone else opens the notebook and follows the same steps, they should be able to get the same result.
+## Why A Notebook Is Better For Beginner Analysis
+If a student writes everything in one long Python script, it can be hard to tell what each part is doing. A notebook solves that problem by breaking the work into smaller pieces called **cells**.
 
-## Vocabulary You Should Know Before Coding
-- **Cell**: one block inside the notebook. Each cell has one job.
-- **Markdown cell**: a text cell used for notes, titles, instructions, and explanations.
-- **Code cell**: a cell that contains Python commands.
-- **Output**: the result produced after running a code cell.
-- **Kernel**: the background engine that runs the code in the notebook.
-- **Runtime**: another word students may see in tools like Colab; it means the working environment that runs the code.
-- **Library**: prewritten code that gives us useful tools.
-- **Import**: the command that loads a library into the notebook so we can use it.
+This helps beginners because:
+- each cell can do one job,
+- students can test ideas in small steps,
+- the notebook can mix explanations with actions,
+- and the results appear right below the code that created them.
 
-## Core Workflow Rules
-- Run cells in order from top to bottom
-- Use `Shift+Enter` to run a cell
-- If you restart runtime/kernel, rerun all cells
-- Keep imports near the top
+That is especially helpful in data analysis, where students often need to inspect data, explain what they see, and then take the next step.
 
-Why these rules matter:
-- Notebooks remember what has already been run.
-- If you run a later cell first, it may depend on something that has not been created yet.
-- Restarting the kernel clears the notebook's working memory, so variables and imported libraries need to be loaded again.
+## Important Vocabulary For This Chapter
+Before students start typing code, they should understand the basic language of the notebook environment.
 
-## Notebook Cells You Can Copy
+- **Cell**: one block in a notebook
+- **Markdown cell**: a text cell used for headings, notes, instructions, and explanations
+- **Code cell**: a cell that contains Python commands
+- **Output**: the result that appears after a code cell runs
+- **Python**: the programming language used in this course
+- **Kernel**: the engine running in the background that executes the code
+- **Runtime**: another word for the active working environment, often used in Colab
+- **Library**: prewritten code that provides useful tools
+- **Import**: the command that loads a library into the notebook
+- **Variable**: a name that stores a value in memory
+- **DataFrame**: a table structure in `pandas`
 
-### Cell 1 (Markdown)
+Students do not need to memorize all of this immediately. The point is to make the words familiar before they appear in action.
+
+## The Three Main Cell Types Students Notice
+In a beginner notebook, three parts appear over and over:
+
+### Markdown Cells
+Markdown cells are for human-readable writing. They can include:
+- titles,
+- headings,
+- instructions,
+- reflections,
+- and short explanations.
+
+These cells matter because a notebook should not feel like unexplained code floating in empty space. Markdown tells the reader what is happening.
+
+### Code Cells
+Code cells contain commands written in Python. When a student runs a code cell, the notebook asks the kernel to execute those commands.
+
+This means code cells are action cells. They are where something happens.
+
+### Output
+Output is what appears after a code cell runs. Output might be:
+- text,
+- a table,
+- an error message,
+- or a chart.
+
+The output helps students check whether their code did what they expected.
+
+## Why Cell Order Matters
+One of the most important beginner ideas is that notebooks remember what has already been run. This means order matters.
+
+If a student tries to use a variable before creating it, the notebook will not know what that name means. If a student restarts the kernel, the notebook forgets the earlier work and needs the cells run again from the top.
+
+This is why teachers often say:
+
+> Run the notebook from top to bottom.
+
+That advice is not just a classroom rule. It is how the notebook keeps its internal state organized.
+
+## A First Mini Notebook
+The best way to understand the notebook environment is to walk through a very small example. Each cell below has one job.
+
+### Cell 1: A Markdown Title
 ```md
 # Lesson 01: Jupyter Notebook Basics
 Goal: Learn notebook workflow before full data analysis.
 ```
 
-Why this cell matters:
-- Markdown helps us label the notebook clearly.
-- Good notebooks explain what they are doing, not just what they are typing.
+This opening cell does not run Python code. Instead, it labels the notebook and states the purpose of the lesson. That may seem small, but it is good practice. A notebook should explain itself.
 
-### Cell 2 (Code)
+### Cell 2: Import The Libraries
 ```python
 import pandas as pd
 import plotly.express as px
 print("Libraries loaded.")
 ```
 
-Big picture:
-- This cell loads the tools we need before we start working with data.
+This is often the first real code cell in a notebook because it prepares the tools.
 
-How it works:
-- `pandas` is a library for working with tables.
-- `plotly.express` is a library for making charts.
-- `as pd` and `as px` create short nicknames so the code is easier to type.
-- `print("Libraries loaded.")` displays a message so we know the cell ran successfully.
+Here is what each part means:
+- `import` tells Python to load a library
+- `pandas` is a library for working with tables
+- `plotly.express` is a library for making charts
+- `as pd` and `as px` give those libraries short nicknames
+- `print("Libraries loaded.")` displays a message so the student can see that the cell worked
 
-Important beginner note:
-- Students do not need to know everything a library can do.
-- At this stage, they only need to understand that libraries give us helpful tools we did not have to write ourselves.
+This cell matters because later code depends on these libraries being available.
 
-### Cell 3 (Code)
+### Cell 3: Create A Small Practice Table
 ```python
 sample = pd.DataFrame(
     {
@@ -89,69 +128,61 @@ sample = pd.DataFrame(
 sample
 ```
 
-Big picture:
-- This cell creates a small practice table directly inside the notebook.
+This cell creates a tiny table directly inside the notebook.
 
-How it works:
-- `sample` is the variable name. A **variable** is a label that stores a value in memory.
-- `pd.DataFrame(...)` creates a **DataFrame**, which is a table in pandas.
-- `"Category"` and `"Value"` are the column names.
-- `["A", "B", "C"]` and `[10, 15, 8]` are the column values.
-- Typing `sample` on the last line displays the table as output.
+Important ideas:
+- `sample` is a variable name
+- `pd.DataFrame(...)` creates a DataFrame
+- a **DataFrame** is a table in `pandas`
+- `"Category"` and `"Value"` are column names
+- the lists below them are the data values for those columns
+- placing `sample` on the final line tells the notebook to display the table
 
-Plain-language reminder:
-- A DataFrame is like a spreadsheet table inside Python.
+This is a good beginner example because it creates visible output quickly. Students can see that code can produce a table immediately.
 
-### Cell 4 (Code)
+### Cell 4: Preview The Top Rows
 ```python
 sample.head()
 ```
 
-Big picture:
-- This cell previews the top rows of the table.
+This cell uses a **method**. A method is an action that an object can perform.
 
-How it works:
-- `head()` is a **method**. A method is an action an object can perform.
-- The parentheses `()` help show that something is being run.
-- `sample.head()` usually shows the first five rows.
+`head()` means "show me the top rows." The parentheses matter because they show that this is an action being called.
 
-### Cell 5 (Code)
+This is useful in real analysis because datasets can be large. Students rarely want to display the full dataset at the very beginning.
+
+### Cell 5: Check The Column Names
 ```python
 sample.columns
 ```
 
-Big picture:
-- This cell checks the names of the columns in the table.
+This cell uses a **property**. A property is information about an object, not an action.
 
-How it works:
-- `columns` is a **property**. A property is information about an object.
-- There are no parentheses because we are not asking the table to do an action.
-- This is one of the easiest ways to check spelling before using a column name later.
+There are no parentheses because `columns` is something the table has, not something the table does.
 
-Method vs property:
-- Method = action, usually with parentheses, like `sample.head()`
-- Property = information, usually without parentheses, like `sample.columns`
+This distinction is worth teaching carefully:
+- **Method** = action, often with parentheses
+- **Property** = information, usually without parentheses
 
-### Cell 6 (Code)
+### Cell 6: Make A Tiny Chart
 ```python
 fig = px.bar(sample, x="Category", y="Value", title="Sample Chart")
 fig.show()
 ```
 
-Big picture:
-- This cell turns the table into a bar chart.
+This cell turns the table into a simple bar chart.
 
-How it works:
-- `px.bar(...)` creates a bar chart using the `plotly.express` library.
-- `x="Category"` tells the chart which column to use on the horizontal axis.
-- `y="Value"` tells the chart which column to use for bar height.
-- `title="Sample Chart"` adds a chart title.
-- `fig.show()` displays the chart.
+Important parts:
+- `px.bar(...)` creates a bar chart
+- `x="Category"` chooses the category labels
+- `y="Value"` chooses the numeric values
+- `title="Sample Chart"` adds a title
+- `fig` stores the chart object in a variable
+- `fig.show()` displays the chart
 
-Plain-language reminder:
-- A chart is a visual output. It helps us compare information more quickly than reading raw numbers alone.
+This is often exciting for beginners because it turns a table into a visual result. It also reinforces the idea that notebooks can combine code with immediate output.
 
-### Cell 7 (Markdown)
+### Cell 7: Add A Reflection
 ```md
 ## Reflection
 - What is the difference between a markdown cell and a code cell?
@@ -159,34 +190,43 @@ Plain-language reminder:
 - Why do we keep imports near the top?
 ```
 
-Why this cell matters:
-- Reflection helps students explain the workflow in words, not just copy steps.
-- If a student can explain what a notebook is doing, they are more likely to troubleshoot it successfully.
+Reflection is part of the learning process. Students should not only run the notebook. They should be able to explain what they did and why it worked.
 
-## Troubleshooting Basics
-- `NameError`: usually means a required cell was not run.
-- Empty/old chart: rerun cells top-to-bottom.
-- Wrong column name: check `sample.columns`.
+## Common Beginner Problems
+Many notebook frustrations come from a few predictable issues. These are worth explaining directly.
 
-More detail:
-- **`NameError`** means Python does not recognize a name you used. Usually the variable or library was never created because an earlier cell was skipped.
-- If output looks old or missing, the notebook may be out of order. Running from top to bottom fixes many beginner problems.
-- If a column name does not work, check capitalization and spelling carefully. Computers treat `"Value"` and `"value"` as different names.
+### `NameError`
+If students see a `NameError`, it usually means Python does not recognize a name they typed. In beginner notebooks, this often happens because:
+- a required earlier cell was never run,
+- the kernel was restarted,
+- or the variable name was typed incorrectly.
 
-## What Students Should Be Able To Explain After This Lesson
-- What a Jupyter Notebook is
-- What a code cell does
-- What a markdown cell does
-- What `import` means
-- What a library is
-- What a DataFrame is at a beginner level
-- Why cell order matters
+### Old Or Missing Output
+Sometimes the notebook still shows old output, or a chart does not appear as expected. In many cases, the fix is simple: rerun the notebook from top to bottom.
 
-## Before Lesson 02
-Students should be able to:
-- Create and run both markdown and code cells
-- Restart and rerun notebook correctly
-- Explain execution order in one sentence
+### Wrong Column Name
+Computers care about exact spelling and capitalization. `"Value"` and `"value"` are different. That is why checking `sample.columns` is such a useful habit.
+
+## What Students Should Understand By The End Of This Chapter
+By the end of Lesson 01, students should be able to explain:
+- what a Jupyter Notebook is,
+- why notebooks are helpful for analysis,
+- what markdown and code cells do,
+- what an output is,
+- what `import` means,
+- what a library is,
+- what a DataFrame is at a beginner level,
+- and why notebook cells need to be run in order.
+
+## Bridge To The Next Lesson
+This chapter teaches the workspace. The next chapter teaches the first full dataset workflow. Students will load real data, inspect it, clean it, and build a chart. In other words, Lesson 01 prepares the environment so Lesson 02 can focus on actual beginner analysis.
+
+## Reflection Questions
+- Why is a notebook better for learning than one long block of code?
+- What is the difference between a markdown cell and a code cell?
+- Why do imports usually appear near the top of a notebook?
+- What is the difference between a method and a property?
+- Why does notebook execution order matter?
 
 ## Alignment Notes
 - Curriculum source: `resources/ICD2O_2023.md`

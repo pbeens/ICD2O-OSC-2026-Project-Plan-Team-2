@@ -78,6 +78,7 @@ When Yolanda sends a new dataset/resource link:
 
 ## Beginner Tutorial Requirements
 - Treat every beginner tutorial in `lessons/` as if the student may have zero prior exposure to programming or data-analysis vocabulary.
+- Write beginner tutorials more like short book chapters than sparse lesson notes. Use connected explanatory paragraphs, transitions between sections, and enough narrative context that a student can read the tutorial straight through and understand the story of the lesson.
 - Define unfamiliar terms the first time they appear in the tutorial, especially terms like Python, Jupyter Notebook, library, `import`, `pandas`, `plotly`, DataFrame, variable, method, property, CSV, dataset, column, row, index, kernel/runtime, and `NaN`.
 - Do not assume students know what a tool is just because it appears in code. Add a plain-language explanation before or immediately after the code example.
 - For each step in a beginner tutorial, include:
@@ -88,6 +89,7 @@ When Yolanda sends a new dataset/resource link:
 - Prefer over-explaining unfamiliar vocabulary rather than leaving gaps that force a student to guess.
 - When using code examples, explain nicknames and shorthand such as `as pd`, `as px`, and `df`.
 - Tutorials should help a student understand both what to type and what the words mean.
+- When possible, include chapter-style elements such as a clear purpose, a conceptual introduction, worked explanations, bridges to the next lesson, and reflection questions that revisit the main ideas.
 
 ## Required Colab Link Footer (Every Notebook)
 Add a final Markdown cell at the bottom of each notebook:
@@ -132,6 +134,11 @@ Colab link validation technique:
 - In lesson plans, format `Curriculum Expectations` as a bulleted list, with one expectation per bullet.
 - In lesson plans, format `Learning Goals` as a bulleted list, with one goal per bullet.
 - In lesson plans, format `Materials/Resources` as a bulleted list, with one material/resource per bullet.
+- At the top of every lesson-related file (`lesson plan`, `tutorial`, `assignment`, and lesson-specific notebook notes when applicable), include a `Related Lesson Files` section that links to the other documents for that lesson.
+- In `Related Lesson Files`, list the document types in this order: `Lesson plan`, `Tutorial`, `Notebook`, `Assignment`.
+- If a related file does not exist yet, write `not yet created` instead of omitting it.
+- In every lesson plan, include an explicit teacher-facing sequence that states what to open first after reviewing the lesson plan (normally the companion tutorial, then the notebook if one exists).
+- In every lesson plan, include a clear ordered activity list so the classroom process is visible at a glance.
 - For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lessons/` for detailed, step-by-step concept and code explanations.
 - Store lesson plan and companion tutorial in the same `lessons/` folder using matched names when possible (for example, `01-topic-lesson-plan.md` and `01-topic-tutorial.md`).
 - In the 5E lesson plan `Materials/Resources`, include a bullet linking to the companion tutorial file.
@@ -144,7 +151,7 @@ Colab link validation technique:
 - When lesson mappings change, update `references/expectations-compliance.md` in the same edit pass, including covered and not-yet-covered expectations.
 - In `Project Plan Team 2.md`, maintain a `% of Expectations Covered` metric that matches `references/expectations-compliance.md` (specific expectations basis).
 - In `Project Plan Team 2.md`, place document links inside existing sections (for example: compliance links in Curriculum Alignment, lesson links in Deliverables, and file/resource links in Resources & Risk), instead of creating an extra standalone links section.
-- In teacher-facing front documents (`Project Plan Team 2.md` and `README.md`), include a short document-flow description for `Lesson Plan -> Tutorial -> Notebook -> Assignment`.
+- In teacher-facing front documents (`Project Plan Team 2.md` and `README.md`), include a short document-flow description for `Lesson Plan -> Tutorial -> Notebook -> Assignment` and state the recommended use order explicitly.
 - For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
 - For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 
@@ -168,5 +175,3 @@ A repository-local skill is a set of instructions stored under `skills/` that ag
 - Scope: Use only the parts of the skill that are necessary for the current request; do not load unrelated references or scripts unless the skill requires them.
 - Path resolution: Resolve any relative paths in a repository skill relative to that skill's own folder first.
 - Fallback: If a skill is missing files, does not fit the task cleanly, or conflicts with higher-priority instructions, state that briefly and continue with the best direct approach.
-
-

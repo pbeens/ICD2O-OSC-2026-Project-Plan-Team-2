@@ -1,61 +1,97 @@
 ﻿# Beginner Tutorial: Extreme Heat Events Data Analysis (ICD2O)
 
-## Purpose
-This walkthrough teaches the full beginner workflow without needing to read detailed theory inside the notebook.
+## Related Lesson Files
+- Lesson plan: [02-extreme-heat-events-lesson-plan.md](02-extreme-heat-events-lesson-plan.md)
+- Tutorial: [02-extreme-heat-events-tutorial.md](02-extreme-heat-events-tutorial.md)
+- Notebook: [../notebooks/csv/02-extreme-heat-events-exploration.ipynb](../notebooks/csv/02-extreme-heat-events-exploration.ipynb)
+- Assignment: not yet created
 
-This tutorial is written for students who may be seeing terms like `pandas`, DataFrame, method, property, and `NaN` for the first time. It explains the big picture first, then the technical details.
+## Chapter Purpose
+This chapter is the first full beginner data-analysis walkthrough in the course. In Lesson 00, students learned the big picture of analysis through the IPO model. In Lesson 01, they learned what a notebook is and how code cells work. Now they are ready to combine those ideas and move through a real workflow from beginning to end.
 
-## What You Will Learn
-- What a DataFrame is and why we use `df`
-- The difference between a method and a property
-- What `NaN` means in plain language
-- How to clean simple data step by step
-- How to make and interpret a bar chart
+This tutorial is intentionally more descriptive than a set of notebook notes. It is written so a beginner can read it almost like a textbook chapter. The goal is not only to tell students what to type, but also to explain what the words mean, why each step happens, and how the steps connect into a larger process.
 
-## Dataset
-- Topic: Extreme heat events in Canada
-- Format: Direct CSV (beginner-friendly)
-- Source: Government of Canada (CSV URL used directly in code)
+## The Question Behind The Lesson
+Every data-analysis lesson should begin with a question. In this case, the question is related to extreme heat events in Canada. A useful classroom version of the question might be:
 
-Important vocabulary before you start:
+> What patterns can we see in extreme heat event data, and what might those patterns suggest?
+
+That question matters because data analysis is never just about opening a file. It is about using information to understand something.
+
+## The Dataset
+This lesson uses a direct CSV file from a Government of Canada source.
+
+Important vocabulary:
 - **Dataset**: a collection of related information
 - **CSV**: a table file where values are separated by commas
 - **Row**: one record in the table
-- **Column**: one type of information in the table
-- **DataFrame**: the pandas version of a table
-- **Library**: extra prewritten code we can import and use
+- **Column**: one category of information in the table
 
-## Before The Code: What Are `pandas` And `plotly`?
-- `pandas` is a Python library for working with tables of data.
-- `plotly` is a Python library for making charts.
-- A **library** is a collection of prewritten code tools.
-- We use libraries because they save time and give us commands built for common tasks.
+When the CSV is loaded into `pandas`, it becomes a **DataFrame**, which is `pandas`' table structure.
 
-Think of it this way:
-- Python is the language.
-- `pandas` is a toolbox for table work.
-- `plotly` is a toolbox for charts.
+## Before The Code: The Main Tools
+This lesson uses two Python libraries:
 
-## Step 1: Import Tools
-Big picture: Load the libraries that handle tables and charts.
+- `pandas`
+- `plotly.express`
+
+Students should understand these at a beginner level before moving on.
+
+### What Is Python?
+**Python** is the programming language used in this course. A programming language is a formal way of writing instructions that a computer can follow.
+
+### What Is A Library?
+A **library** is a collection of prewritten code tools. Libraries save time because programmers do not have to build every tool themselves from scratch.
+
+### What Is `pandas`?
+`pandas` is a Python library used for working with tables of data. It helps students:
+- load data,
+- inspect rows and columns,
+- clean missing values,
+- rename columns,
+- and transform tables into forms that are easier to analyze.
+
+### What Is `plotly.express`?
+`plotly.express` is a Python library used for making charts. It helps students turn data into visual outputs that are easier to compare and explain.
+
+An easy way to remember the tools is this:
+- Python is the language
+- `pandas` is the table toolbox
+- `plotly` is the chart toolbox
+
+## The Workflow We Will Follow
+This lesson follows a beginner-friendly sequence:
+1. import the tools
+2. load the CSV
+3. inspect the table
+4. clean the data
+5. convert values when needed
+6. build a chart
+7. interpret the result
+
+This structure is important. It reminds students that the chart comes near the end, not at the beginning.
+
+## Step 1: Import The Tools
+The first step in many notebooks is to import the libraries the lesson needs.
 
 ```python
 import pandas as pd
 import plotly.express as px
 ```
 
-How it works:
-- `import` means "load this library so I can use it in this notebook."
-- `pandas` is used for table-like data.
-- `plotly.express` is used for quick, readable charts.
-- `as pd` gives `pandas` a short nickname.
-- `as px` gives `plotly.express` a short nickname.
+Here is what each part means:
+- `import` means "load this library so I can use it"
+- `pandas` is the full library name
+- `as pd` gives it a short nickname
+- `plotly.express` is the charting library
+- `as px` gives it a short nickname too
 
-Why this matters:
-- Without importing the libraries first, later code like `pd.read_csv(...)` or `px.bar(...)` would not work.
+These short nicknames are common in beginner and professional notebooks. They make the code shorter and easier to read after students become familiar with them.
 
-## Step 2: Load the CSV into a DataFrame
-Big picture: Read the online CSV into a table we can work with.
+This step belongs to the **Input** part of IPO because it prepares the tools for the work ahead.
+
+## Step 2: Load The CSV Into A DataFrame
+Once the tools are ready, the next step is to bring the dataset into the notebook.
 
 ```python
 data_url = "https://www.canada.ca/content/dam/eccc/documents/csv/cesindicators/extreme-heat-events/2025/cumulative-days-extreme-heat.csv"
@@ -63,102 +99,137 @@ df = pd.read_csv(data_url)
 display(df.head())
 ```
 
-How it works:
-- `data_url` is a variable. A **variable** stores a value using a name.
-- The string in quotes is the web address of the CSV file.
-- `pd.read_csv(data_url)` tells pandas to read the CSV from that address.
-- A **DataFrame** is a table in pandas (rows and columns).
-- We name it `df` because that is the common short name for “data frame”.
-- `df.head()` is a **method** (it uses parentheses) that shows top rows.
-- `display(...)` shows the result in a clear notebook-friendly way.
+This short block introduces several important ideas.
 
-Why we do this:
-- Loading the dataset is the moment where raw information becomes something we can inspect and analyze in Python.
+### `data_url`
+`data_url` is a **variable**. A variable is a name that stores a value in memory. In this case, the value is the web address of the CSV file.
 
-## Step 3: Check Column Names
-Big picture: See what columns exist before cleaning.
+### `pd.read_csv(data_url)`
+This tells `pandas` to read the CSV from the web address and turn it into a table.
+
+### `df`
+The name `df` stands for **data frame**. It is a very common beginner and professional nickname for a DataFrame.
+
+### DataFrame
+A **DataFrame** is a table in `pandas`. It has rows and columns, much like a spreadsheet.
+
+### `df.head()`
+`head()` is a **method**. A method is an action an object performs. `df.head()` shows the first few rows, which helps students inspect the data without printing the full table.
+
+### `display(...)`
+`display(...)` is a notebook-friendly way to show the output clearly.
+
+This step is important because it turns a distant file on the internet into a table the notebook can actually work with.
+
+## Step 3: Check The Column Names
+Before students clean or chart the data, they should see what columns exist.
 
 ```python
 display(df.columns)
 ```
 
-How it works:
-- `df.columns` is a **property** (no parentheses).
-- Property = information about the table.
-- Method = an action the table performs.
-- Column names matter because we must spell them correctly when we refer to them later in code.
+This introduces the idea of a **property**.
 
-## Step 4: Rename Columns for Clarity
-Big picture: Replace long or unclear names with simpler names.
+- A **method** does something
+- A **property** tells us information
+
+`df.columns` is a property because it gives information about the table. It does not perform an action in the same way that `df.head()` does.
+
+This step matters because students need exact column names later. If the column names are long or awkward, students may make spelling mistakes when writing code.
+
+## Step 4: Rename The Columns For Clarity
+When column names are unclear or inconvenient, students can rename them.
 
 ```python
 df.columns = ["Trend", "Number of Stations", "Percentage"]
 display(df.head())
 ```
 
-How it works:
-- Cleaner names make later code easier to read and debug.
-- This does not change the meaning of the data. It only changes the labels we use inside the notebook.
-- Clear names are especially helpful for beginners because shorter labels reduce typing mistakes.
+This means the notebook is replacing the current column labels with clearer ones.
 
-## Step 5: View Full Table Before Cleaning
-Big picture: Inspect rows to spot missing or invalid values.
+That does **not** change the meaning of the data. It only changes how the notebook refers to those columns.
+
+This is helpful because:
+- shorter names are easier to type,
+- clearer names are easier to read,
+- and simpler labels reduce beginner errors.
+
+## Step 5: Inspect The Full Table
+Before cleaning, students should pause and look at the table more carefully.
 
 ```python
 display(df)
 ```
 
-How it works:
-- We look for values that should be numbers but are text/blank.
-- This is an important habit in data analysis: look at the data before making assumptions about it.
+This is part of the **Process** stage of IPO. It may seem passive, but it is a real analytic action. Students are checking whether the data looks complete and usable.
 
-## Step 6: Remove Missing Rows (`NaN`)
-Big picture: Remove rows with missing values.
+This step builds a valuable habit:
+
+> Look at the data before changing the data.
+
+That habit helps prevent blind editing.
+
+## Step 6: Remove Missing Values
+Sometimes datasets contain missing or unusable values. In data analysis, those often appear as `NaN`.
 
 ```python
 df = df.dropna().copy()
 display(df)
 ```
 
-How it works:
-- `NaN` means “Not a Number” (usually blank or missing data).
-- `dropna()` removes rows containing missing values.
-- `copy()` creates a clean independent result so later edits are safer.
+### What `NaN` Means
+`NaN` stands for **Not a Number**. In beginner-friendly language, it often means a value is missing, blank, or not usable as a real number.
 
-Why this matters:
-- If missing values stay in the table, they can cause errors or misleading results later.
-- Cleaning is not about making the data look nice. It is about making the data usable and trustworthy enough for the current task.
+### What `dropna()` Does
+`dropna()` removes rows that contain missing values.
 
-## Step 7: Remove an Unwanted Row by Index
-Big picture: Delete a row that should not be part of analysis.
+### Why `copy()` Is Used
+`copy()` creates a separate cleaned result so later edits are safer and clearer.
+
+This matters because charts and calculations can become confusing or unreliable if missing values are left in place.
+
+Students should understand that cleaning is not cosmetic. It is part of making the data trustworthy enough for the task.
+
+## Step 7: Remove An Unwanted Row By Index
+Sometimes a row should not be part of the analysis even if it is not technically blank.
 
 ```python
 df = df.drop(index=1, errors="ignore").copy()
 display(df)
 ```
 
-How it works:
-- `drop(index=1)` asks pandas to remove row index 1.
-- `errors="ignore"` prevents a crash if that row is not present.
-- The **index** is the row label/position pandas uses to identify rows.
-- `errors="ignore"` is useful for beginners because it makes the notebook more forgiving when the table is slightly different than expected.
+### What Is The Index?
+The **index** is the row label or position used by `pandas` to identify rows.
 
-## Step 8: Convert a Column to Numeric
-Big picture: Ensure chart values are real numbers.
+### What `drop(index=1)` Does
+It asks `pandas` to remove the row with index 1.
+
+### What `errors="ignore"` Does
+If that row does not exist, `errors="ignore"` prevents the notebook from crashing.
+
+This is useful in beginner notebooks because it keeps the workflow more forgiving. Students can focus on understanding the concept instead of being stopped by a fragile step.
+
+## Step 8: Convert A Column To Numeric
+Sometimes a column looks numeric to a human reader, but the computer has stored it as text. That can cause problems for charts and calculations.
 
 ```python
 df["Number of Stations"] = pd.to_numeric(df["Number of Stations"], errors="coerce")
 display(df.dtypes)
 ```
 
-How it works:
-- `pd.to_numeric(...)` converts text numbers to numeric type.
-- `errors="coerce"` turns unconvertible values into `NaN`.
-- This is useful because charts and calculations need real numbers, not number-looking text.
-- If a value cannot become a number, `errors="coerce"` marks it as missing instead of crashing the notebook.
+### Why This Step Exists
+Charts need real numbers, not number-like text.
 
-## Step 9: Build the Bar Chart
-Big picture: Visualize stations by trend category.
+### What `pd.to_numeric(...)` Does
+It converts values to a numeric type.
+
+### What `errors="coerce"` Does
+If a value cannot be converted, it becomes `NaN` instead of causing the notebook to stop with an error.
+
+This is a good example of a practical beginner idea: sometimes the computer needs data to be translated into a form it can actually work with.
+
+## Step 9: Build The Bar Chart
+Once the data is ready, students can create a visual output.
 
 ```python
 fig = px.bar(
@@ -171,38 +242,62 @@ fig = px.bar(
 fig.show()
 ```
 
-How it works:
-- `x` chooses category labels.
-- `y` chooses numeric values.
-- The chart helps us compare categories quickly.
-- The variable `fig` stores the chart object before it is shown.
-- `fig.show()` displays the finished chart in the notebook.
+This block creates a bar chart using `plotly.express`.
 
-## Step 10: Interpret Results
-Write 2-3 evidence-based observations:
-- Which trend category is highest?
-- Which is lowest?
-- What might this suggest about extreme heat patterns?
+Important parts:
+- `fig` is the variable storing the chart object
+- `x="Trend"` chooses the category axis
+- `y="Number of Stations"` chooses the numeric values
+- `title=...` adds a title
+- `labels=...` improves the chart labels
+- `fig.show()` displays the chart
 
-Reminder:
-- An **observation** describes what the chart shows.
+This belongs to the **Output** stage of IPO because it creates a visible result that can be interpreted.
+
+## Step 10: Interpret The Output
+A chart is only useful if students can say what it shows.
+
+At this stage, students should write two or three evidence-based observations. For example, they might identify:
+- which trend category is highest,
+- which category is lowest,
+- and what the comparison might suggest.
+
+This is where students move from display to meaning.
+
+Important distinction:
+- An **observation** describes what is visible in the evidence.
 - An **interpretation** explains what that evidence might mean.
-- Students should try to mention the actual categories or values they see, not just say "the chart is interesting."
 
-## Checkpoint Questions
-- What is a DataFrame?
-- Why do we use the variable name `df`?
-- Give one method and one property from this lesson.
-- What does `NaN` mean?
-- Why is `errors="ignore"` useful in `drop()`?
+Students should be encouraged to refer to the actual categories and values they see, not use vague phrases like "the chart is interesting."
 
-## Beginner Summary
-- `pandas` helps us work with tables.
-- A DataFrame is a table in `pandas`.
-- `df` is just a short variable name for that table.
-- Methods do actions, and properties give information.
-- `NaN` means missing or unusable data.
-- Cleaning comes before charting because charts are only as good as the data behind them.
+## The Bigger Lesson
+This chapter is not only about one dataset. It teaches a pattern students will use again:
+
+1. prepare the tools
+2. load the data
+3. inspect the table
+4. clean the data
+5. build the output
+6. explain the meaning
+
+That pattern is the real learning goal. The extreme heat dataset is the example that makes the pattern visible.
+
+## What Students Should Be Able To Explain After This Chapter
+By the end of the lesson, students should be able to explain:
+- what `pandas` does,
+- what a DataFrame is,
+- why `df` is a common name,
+- what the difference is between a method and a property,
+- what `NaN` means,
+- why cleaning happens before charting,
+- and why the chart is only one part of the analysis process.
+
+## Reflection Questions
+- Why do we inspect data before cleaning it?
+- Why might a number-looking value still need conversion?
+- What is the difference between `df.head()` and `df.columns`?
+- Why does cleaning happen before charting?
+- What does the final chart help us understand that a raw table does not show as clearly?
 
 ## Curriculum + Assessment Alignment
 - Curriculum source: `resources/ICD2O_2023.md`
