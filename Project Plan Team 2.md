@@ -76,12 +76,21 @@ Final Product Format:
 - Report / Presentation / Prototype / Performance / Portfolio / Other: Notebook outputs + short written reflections
 
 Active lesson files:
-- [lessons/00-data-analysis-big-picture-lesson-plan.md](lessons/00-data-analysis-big-picture-lesson-plan.md)
-- [lessons/00-data-analysis-big-picture-tutorial.md](lessons/00-data-analysis-big-picture-tutorial.md)
-- [lessons/01-jupyter-notebooks-foundations-lesson-plan.md](lessons/01-jupyter-notebooks-foundations-lesson-plan.md)
-- [lessons/01-jupyter-notebooks-foundations-tutorial.md](lessons/01-jupyter-notebooks-foundations-tutorial.md)
-- [lessons/02-extreme-heat-events-lesson-plan.md](lessons/02-extreme-heat-events-lesson-plan.md)
-- [lessons/02-extreme-heat-events-tutorial.md](lessons/02-extreme-heat-events-tutorial.md)
+- Lesson 00: Big Picture Data Analysis
+  - Lesson plan: [lessons/00-data-analysis-big-picture-lesson-plan.md](lessons/00-data-analysis-big-picture-lesson-plan.md)
+  - Tutorial: [lessons/00-data-analysis-big-picture-tutorial.md](lessons/00-data-analysis-big-picture-tutorial.md)
+  - Notebook: not yet created
+  - Assignment: [lessons/00-data-analysis-big-picture-assignment.md](lessons/00-data-analysis-big-picture-assignment.md)
+- Lesson 01: Jupyter Notebook Foundations for Data Analysis
+  - Lesson plan: [lessons/01-jupyter-notebooks-foundations-lesson-plan.md](lessons/01-jupyter-notebooks-foundations-lesson-plan.md)
+  - Tutorial: [lessons/01-jupyter-notebooks-foundations-tutorial.md](lessons/01-jupyter-notebooks-foundations-tutorial.md)
+  - Notebook: not yet created
+  - Assignment: not yet created
+- Lesson 02: Beginner Data Analysis with Extreme Heat Events
+  - Lesson plan: [lessons/02-extreme-heat-events-lesson-plan.md](lessons/02-extreme-heat-events-lesson-plan.md)
+  - Tutorial: [lessons/02-extreme-heat-events-tutorial.md](lessons/02-extreme-heat-events-tutorial.md)
+  - Notebook: [notebooks/csv/02-extreme-heat-events-exploration.ipynb](notebooks/csv/02-extreme-heat-events-exploration.ipynb)
+  - Assignment: not yet created
 
 Document flow:
 - Lesson plan: defines learning goals, sequence, and assessment intent.
@@ -177,5 +186,3 @@ Document flow:
 - Risk: students run cells out of order. Mitigation: explicit top-to-bottom execution routines.
 - Risk: technical setup issues. Mitigation: provide Colab fallback and starter cells.
 - Risk: overload in first coding lesson. Mitigation: keep Lesson 00 and Lesson 01 concept/procedure focused.
-
-
