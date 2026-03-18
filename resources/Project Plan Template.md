@@ -108,8 +108,6 @@ TBD
 * Initiative: Show curiosity, ask useful questions, and take next steps without waiting to be told.  
 * Self-Regulation: Set goals, monitor progress, and adjust effort/strategies when challenges appear.
 
-(Describe how they will be observed and documented.)
-
 ## 10\. Differentiation & Equity Considerations
 
 ### Accommodations (IEP/ELL):
