@@ -113,7 +113,7 @@ Teacher focus:
 - Use a short explanatory Markdown section above each code cell.
 
 Activities:
-- Guided run of `notebooks/csv/extreme-heat-events-exploration.ipynb`.
+- Guided run of `notebooks/csv/02-extreme-heat-events-exploration.ipynb`.
 - Read and run the import setup cell:
   - `import pandas as pd`
   - `import plotly.express as px`
@@ -194,3 +194,4 @@ Teacher script notes for Module 2:
 2. Module 4: Comparing groups (bar charts, grouped summaries).
 3. Module 5: Intro to relationships (scatter plot + trendline concept).
 4. Culminating mini-project rubric (student + teacher versions).
+

@@ -152,7 +152,7 @@ Active lesson files:
 - [resources/ICD2O_2023.md](resources/ICD2O_2023.md)
 - [resources/growSuccess.md](resources/growSuccess.md)
 - [resources/5E Lesson Plan Template.md](resources/5E%20Lesson%20Plan%20Template.md)
-- [notebooks/csv/extreme-heat-events-exploration.ipynb](notebooks/csv/extreme-heat-events-exploration.ipynb)
+- [notebooks/csv/02-extreme-heat-events-exploration.ipynb](notebooks/csv/02-extreme-heat-events-exploration.ipynb)
 - Jupyter Notebook or Google Colab
 
 ### Community/Experiential Components (if any):
@@ -166,3 +166,4 @@ Active lesson files:
 - Risk: students run cells out of order. Mitigation: explicit top-to-bottom execution routines.
 - Risk: technical setup issues. Mitigation: provide Colab fallback and starter cells.
 - Risk: overload in first coding lesson. Mitigation: keep Lesson 00 and Lesson 01 concept/procedure focused.
+
