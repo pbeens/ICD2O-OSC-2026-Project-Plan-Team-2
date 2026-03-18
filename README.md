@@ -15,6 +15,7 @@ Resource and analysis workspace for developing the ICD2O project plan.
   - `notebooks/excel/`
   - `notebooks/json/`
 - `references/`: source lists, summaries, and planning documents.
+- `lesson-plans/`: 5E lesson plans based on selected beginner notebooks.
 - `logs/` (optional): ingestion or processing notes.
 
 Create folders as needed when they are first used.
@@ -85,6 +86,9 @@ Dataset/resource intake is tracked in:
 
 ## Classroom Manual
 - `references/student-teacher-manual.md` (student/teacher guide for Grade 10 beginner workflow)
+
+## Lesson Plans
+- `lesson-plans/lesson-01-extreme-heat-events-5e.md` (first beginner lesson plan based on the extreme heat CSV notebook)
 
 ## Resources Workflow
 - `resources/README.md` (PDF-to-Markdown workflow and lesson-planning resource guidance)
