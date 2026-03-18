@@ -26,7 +26,7 @@ This project builds a beginner-friendly path into data analysis using authentic 
 ## 3. Curriculum Alignment (Mandatory)
 
 **% of Expectations Covered (Specific Expectations):** 25.64%  
-Source: `references/expectations-compliance.md`
+Source: [references/expectations-compliance.md](references/expectations-compliance.md)
 
 ### Overall Expectations Addressed:
 
@@ -173,4 +173,3 @@ Active lesson files:
 - Risk: students run cells out of order. Mitigation: explicit top-to-bottom execution routines.
 - Risk: technical setup issues. Mitigation: provide Colab fallback and starter cells.
 - Risk: overload in first coding lesson. Mitigation: keep Lesson 00 and Lesson 01 concept/procedure focused.
-
