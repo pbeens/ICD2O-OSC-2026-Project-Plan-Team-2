@@ -100,6 +100,9 @@ Colab link validation technique:
 - If a notebook is created or renamed, ensure its Colab footer link matches the new path.
 - Keep keyword sections alphabetized by keyword name (for example, `## Keywords` in reference manuals).
 - When uncertain about data licensing or source credibility, flag it in notes before use.
+- For files in `resources/`, treat Markdown as the ingestion format and PDF as the source/archive format.
+- If both `resources/name.md` and `resources/name.pdf` exist, prefer the Markdown file for AI ingestion and skip the PDF unless the original document is needed for verification.
+- Use `resources/5E Lesson Plan Template.md` as the default template for all lesson plan creation unless the user explicitly requests a different format.
 
 ## Definition of Done For New Notebook Creation
 - Notebook saved under `notebooks/` with clear name.
@@ -107,3 +110,16 @@ Colab link validation technique:
 - Core analysis cells run without obvious errors.
 - Final Markdown cell includes a valid Colab link.
 - Related dataset link is recorded in repository documentation.
+
+## Repository Skills
+A repository-local skill is a set of instructions stored under `skills/` that agents should use when the task clearly matches the skill.
+
+### Available repository skills
+- `pdf2md-document-restoration`: High-fidelity conversion and cleanup of PDF documents into Markdown for this repository, especially for government documents, curriculum resources, technical manuals, and academic references. Use when the user wants a PDF made easier to ingest or reuse in lesson-planning work. The related helper utilities are `utils/check_noise.py` and `utils/fix_markdown_lints.py`. (file: `skills/pdf2md-document-restoration/SKILL.md`)
+
+### How to use repository skills
+- Discovery: Check `skills/` for repository-local skills before inventing a custom workflow for specialized tasks.
+- Trigger rule: If the user explicitly mentions a repository skill by name, or the task clearly matches its description, open that skill's `SKILL.md` and follow it.
+- Scope: Use only the parts of the skill that are necessary for the current request; do not load unrelated references or scripts unless the skill requires them.
+- Path resolution: Resolve any relative paths in a repository skill relative to that skill's own folder first.
+- Fallback: If a skill is missing files, does not fit the task cleanly, or conflicts with higher-priority instructions, state that briefly and continue with the best direct approach.

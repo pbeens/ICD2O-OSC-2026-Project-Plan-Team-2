@@ -85,6 +85,12 @@ Dataset/resource intake is tracked in:
 ## Classroom Manual
 - `references/student-teacher-manual.md` (student/teacher guide for Grade 10 beginner workflow)
 
+## Resources Workflow
+- `resources/README.md` (PDF-to-Markdown workflow and lesson-planning resource guidance)
+- Resource files such as PDFs can be placed in `resources/` and a conversion request can be given to turn them into Markdown.
+- After conversion, the original PDFs can be deleted if desired.
+- Markdown files are usually better than PDFs for AI ingestion because the text is easier to parse, search, chunk, and reuse reliably.
+
 ## Working Notes
 - Keep documentation current when notebooks or data sources are added.
 - Do not overwrite user-created analysis without explicit request.
