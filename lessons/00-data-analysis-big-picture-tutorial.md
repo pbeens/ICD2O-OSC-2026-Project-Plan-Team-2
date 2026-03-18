@@ -36,6 +36,9 @@ What comes out.
 - Lesson 01 (Jupyter basics): mostly Input skills
 - Lesson 02 (Extreme Heat): full Input + Process + Output cycle
 
+## Related Notebook
+- [02-extreme-heat-events-exploration.ipynb](../notebooks/csv/02-extreme-heat-events-exploration.ipynb)
+
 ## Classroom Activity
 Sort each task into IPO:
 1. Import pandas
