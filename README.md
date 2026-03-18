@@ -90,6 +90,15 @@ Dataset/resource intake is tracked in:
 ## Project Plan
 - `Project Plan Team 2.md` (active front-end project plan document populated from the project plan template)
 
+## Teacher Framework
+- `references/pact-framework.md` (PACT framework used for assignment design in an AI-rich classroom)
+
+## Document Flow
+- `lesson-plans/NN-topic-lesson-plan.md`: teacher planning and pacing (what will be taught)
+- `lesson-plans/NN-topic-tutorial.md`: detailed concept/code walkthrough (how to teach/learn it)
+- `notebooks/.../NN-topic-exploration.ipynb`: runnable student analysis workflow (where execution happens)
+- `lesson-plans/NN-topic-assignment.md`: student-facing assignment artifact (what students submit/work through)
+
 ## Lesson Plans
 - `lesson-plans/00-data-analysis-big-picture-lesson-plan.md` (big-picture intro to data analysis and IPO model)
 - `lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md` (Jupyter workflow foundations)

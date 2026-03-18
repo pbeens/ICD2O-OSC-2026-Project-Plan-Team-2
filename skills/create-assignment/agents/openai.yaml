@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Assignment"
+  short_description: "Generate Assignment prompts quickly."
+  default_prompt: "Create assignment prompt for Lesson 02."

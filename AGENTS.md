@@ -21,6 +21,7 @@
 - Use `resources/Project Plan Template.md` as the template for the root-level project plan front-end document.
 - The active root-level project plan document is `Project Plan Team 2.md`.
 - Track curriculum coverage in `references/expectations-compliance.md`.
+- Track teacher-facing assignment-design framework notes in `references/pact-framework.md`.
 
 ## Expected Repository Structure
 - `datasets/`
@@ -130,6 +131,7 @@ Colab link validation technique:
 - When lesson mappings change, update `references/expectations-compliance.md` in the same edit pass, including covered and not-yet-covered expectations.
 - In `Project Plan Team 2.md`, maintain a `% of Expectations Covered` metric that matches `references/expectations-compliance.md` (specific expectations basis).
 - In `Project Plan Team 2.md`, place document links inside existing sections (for example: compliance links in Curriculum Alignment, lesson links in Deliverables, and file/resource links in Resources & Risk), instead of creating an extra standalone links section.
+- In teacher-facing front documents (`Project Plan Team 2.md` and `README.md`), include a short document-flow description for `Lesson Plan -> Tutorial -> Notebook -> Assignment`.
 - For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
 - For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 
@@ -145,6 +147,7 @@ A repository-local skill is a set of instructions stored under `skills/` that ag
 
 ### Available repository skills
 - `pdf2md-document-restoration`: High-fidelity conversion and cleanup of PDF documents into Markdown for this repository, especially for government documents, curriculum resources, technical manuals, and academic references. Use when the user wants a PDF made easier to ingest or reuse in lesson-planning work. The related helper utilities are `utils/generate_markitdown_baseline.py`, `utils/check_pdf_conversion_structure.py`, `utils/check_noise.py`, and `utils/fix_markdown_lints.py`. (file: `skills/pdf2md-document-restoration/SKILL.md`)
+- `create-assignment`: Generate a paste-ready prompt for the Assignment Strengthener GPT using a lesson plan/tutorial and current curriculum coverage context. Use when the user asks to create or strengthen an assignment for a lesson, topic, or notebook. (file: `skills/create-assignment/SKILL.md`)
 
 ### How to use repository skills
 - Discovery: Check `skills/` for repository-local skills before inventing a custom workflow for specialized tasks.
