@@ -1,4 +1,4 @@
-﻿# 5E Lesson Plan Template[^1]
+﻿# Lesson 00: Big Picture Data Analysis[^1]
 
 ## Course
 
@@ -34,7 +34,7 @@ Students will be able to:
 
 ## Materials/Resources
 
-| - Companion tutorial: [lesson-00-data-analysis-big-picture-tutorial.md](lesson-00-data-analysis-big-picture-tutorial.md)<br>- Whiteboard or slides for IPO model examples<br>- Simple sample table for sorting/classifying tasks<br>- Curriculum reference: `resources/ICD2O_2023.md`<br>- Assessment/evaluation policy reference: `resources/growSuccess.md` |
+| - Companion tutorial: [00-data-analysis-big-picture-tutorial.md](00-data-analysis-big-picture-tutorial.md)<br>- Whiteboard or slides for IPO model examples<br>- Simple sample table for sorting/classifying tasks<br>- Curriculum reference: `resources/ICD2O_2023.md`<br>- Assessment/evaluation policy reference: `resources/growSuccess.md` |
 | :---- |
 
 ## Lesson Body
@@ -78,3 +78,4 @@ Students will be able to:
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)
+

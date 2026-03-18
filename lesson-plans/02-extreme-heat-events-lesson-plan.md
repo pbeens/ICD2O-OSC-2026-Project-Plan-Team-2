@@ -1,4 +1,4 @@
-﻿# 5E Lesson Plan Template[^1]
+﻿# Lesson 02: Beginner Data Analysis with Extreme Heat Events[^1]
 
 ## Course
 
@@ -34,7 +34,7 @@ Students will be able to:
 
 ## Materials/Resources
 
-| - Notebook: `notebooks/csv/extreme-heat-events-exploration.ipynb`<br>- Companion tutorial: [lesson-02-extreme-heat-events-tutorial.md](lesson-02-extreme-heat-events-tutorial.md)<br>- Curriculum reference: `resources/ICD2O_2023.md`<br>- Assessment/evaluation policy reference: `resources/growSuccess.md`<br>- Computer with Jupyter or Google Colab<br>- Internet access for direct CSV source<br>- Projector/teacher display |
+| - Notebook: `notebooks/csv/extreme-heat-events-exploration.ipynb`<br>- Companion tutorial: [02-extreme-heat-events-tutorial.md](02-extreme-heat-events-tutorial.md)<br>- Curriculum reference: `resources/ICD2O_2023.md`<br>- Assessment/evaluation policy reference: `resources/growSuccess.md`<br>- Computer with Jupyter or Google Colab<br>- Internet access for direct CSV source<br>- Projector/teacher display |
 | :---- |
 
 ## Lesson Body
@@ -78,3 +78,4 @@ Students will be able to:
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)
+

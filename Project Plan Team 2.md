@@ -78,12 +78,12 @@ Final Product Format:
 - Report / Presentation / Prototype / Performance / Portfolio / Other: Notebook outputs + short written reflections
 
 Active lesson files:
-- [lesson-plans/lesson-00-data-analysis-big-picture-5e.md](lesson-plans/lesson-00-data-analysis-big-picture-5e.md)
-- [lesson-plans/lesson-00-data-analysis-big-picture-tutorial.md](lesson-plans/lesson-00-data-analysis-big-picture-tutorial.md)
-- [lesson-plans/lesson-01-jupyter-notebooks-foundations-5e.md](lesson-plans/lesson-01-jupyter-notebooks-foundations-5e.md)
-- [lesson-plans/lesson-01-jupyter-notebooks-foundations-tutorial.md](lesson-plans/lesson-01-jupyter-notebooks-foundations-tutorial.md)
-- [lesson-plans/lesson-02-extreme-heat-events-5e.md](lesson-plans/lesson-02-extreme-heat-events-5e.md)
-- [lesson-plans/lesson-02-extreme-heat-events-tutorial.md](lesson-plans/lesson-02-extreme-heat-events-tutorial.md)
+- [lesson-plans/00-data-analysis-big-picture-lesson-plan.md](lesson-plans/00-data-analysis-big-picture-lesson-plan.md)
+- [lesson-plans/00-data-analysis-big-picture-tutorial.md](lesson-plans/00-data-analysis-big-picture-tutorial.md)
+- [lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md](lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md)
+- [lesson-plans/01-jupyter-notebooks-foundations-tutorial.md](lesson-plans/01-jupyter-notebooks-foundations-tutorial.md)
+- [lesson-plans/02-extreme-heat-events-lesson-plan.md](lesson-plans/02-extreme-heat-events-lesson-plan.md)
+- [lesson-plans/02-extreme-heat-events-tutorial.md](lesson-plans/02-extreme-heat-events-tutorial.md)
 
 ## 6. Timeline & Milestones
 
@@ -173,3 +173,4 @@ Active lesson files:
 - Risk: students run cells out of order. Mitigation: explicit top-to-bottom execution routines.
 - Risk: technical setup issues. Mitigation: provide Colab fallback and starter cells.
 - Risk: overload in first coding lesson. Mitigation: keep Lesson 00 and Lesson 01 concept/procedure focused.
+

@@ -91,9 +91,9 @@ Dataset/resource intake is tracked in:
 - `Project Plan Team 2.md` (active front-end project plan document populated from the project plan template)
 
 ## Lesson Plans
-- `lesson-plans/lesson-00-data-analysis-big-picture-5e.md` (big-picture intro to data analysis and IPO model)
-- `lesson-plans/lesson-01-jupyter-notebooks-foundations-5e.md` (Jupyter workflow foundations)
-- `lesson-plans/lesson-02-extreme-heat-events-5e.md` (first full beginner dataset analysis lesson)
+- `lesson-plans/00-data-analysis-big-picture-lesson-plan.md` (big-picture intro to data analysis and IPO model)
+- `lesson-plans/01-jupyter-notebooks-foundations-lesson-plan.md` (Jupyter workflow foundations)
+- `lesson-plans/02-extreme-heat-events-lesson-plan.md` (first full beginner dataset analysis lesson)
 
 ## Resources Workflow
 - `resources/README.md` (PDF-to-Markdown workflow and lesson-planning resource guidance)
@@ -107,3 +107,4 @@ Dataset/resource intake is tracked in:
 - Do not overwrite user-created analysis without explicit request.
 - If data is downloaded/transformed, note notebook and output location.
 - Flag uncertain licensing or source credibility before use.
+

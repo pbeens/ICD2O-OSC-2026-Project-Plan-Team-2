@@ -1,8 +1,8 @@
-# ICD2O Expectations Compliance Tracker
+﻿# ICD2O Expectations Compliance Tracker
 
 ## Scope
 - Source expectations: `resources/ICD2O_2023.md`
-- Evidence mapping source: `lesson-plans/*-5e.md`
+- Evidence mapping source: `lesson-plans/*-lesson-plan.md`
 - Coverage basis: **specific expectations only** (`A#.#`, `B#.#`, `C#.#`)
 
 ## Summary
@@ -14,16 +14,16 @@
 ## Covered Expectations (With Location)
 | Expectation | Description | Covered In |
 | --- | --- | --- |
-| A1.1 | apply computational thinking concepts and practices when planning and designing computational artifacts | lesson-00-data-analysis-big-picture-5e.md<br>lesson-02-extreme-heat-events-5e.md |
-| A1.2 | use a variety of tools and processes to plan, design, and share algorithms and computational artifacts | lesson-00-data-analysis-big-picture-5e.md<br>lesson-02-extreme-heat-events-5e.md |
-| A2.1 | investigate current social, cultural, economic, environmental, and ethical issues related to digital technology that have personal, local, and global impacts, taking various perspectives into account | lesson-00-data-analysis-big-picture-5e.md<br>lesson-02-extreme-heat-events-5e.md |
-| A3.1 | investigate how digital technology and programming skills can be used within a variety of disciplines in real-world applications | lesson-00-data-analysis-big-picture-5e.md |
-| B2.1 | use file management techniques, including those related to local and cloud storage, to organize, edit, and share files | lesson-01-jupyter-notebooks-foundations-5e.md |
-| B2.2 | identify and use effective research practices and supports when learning to use new hardware or software | lesson-01-jupyter-notebooks-foundations-5e.md |
-| C2.2 | write programs that use and generate data involving various sources and formats | lesson-02-extreme-heat-events-5e.md |
-| C3.1 | analyze existing code to understand the components and outcomes of the code | lesson-01-jupyter-notebooks-foundations-5e.md<br>lesson-02-extreme-heat-events-5e.md |
-| C3.2 | modify an existing program, or components of a program, to enable it to complete a different task | lesson-02-extreme-heat-events-5e.md |
-| C3.4 | write programs that make use of external or add-on modules or libraries | lesson-01-jupyter-notebooks-foundations-5e.md<br>lesson-02-extreme-heat-events-5e.md |
+| A1.1 | apply computational thinking concepts and practices when planning and designing computational artifacts | 00-data-analysis-big-picture-lesson-plan.md<br>02-extreme-heat-events-lesson-plan.md |
+| A1.2 | use a variety of tools and processes to plan, design, and share algorithms and computational artifacts | 00-data-analysis-big-picture-lesson-plan.md<br>02-extreme-heat-events-lesson-plan.md |
+| A2.1 | investigate current social, cultural, economic, environmental, and ethical issues related to digital technology that have personal, local, and global impacts, taking various perspectives into account | 00-data-analysis-big-picture-lesson-plan.md<br>02-extreme-heat-events-lesson-plan.md |
+| A3.1 | investigate how digital technology and programming skills can be used within a variety of disciplines in real-world applications | 00-data-analysis-big-picture-lesson-plan.md |
+| B2.1 | use file management techniques, including those related to local and cloud storage, to organize, edit, and share files | 01-jupyter-notebooks-foundations-lesson-plan.md |
+| B2.2 | identify and use effective research practices and supports when learning to use new hardware or software | 01-jupyter-notebooks-foundations-lesson-plan.md |
+| C2.2 | write programs that use and generate data involving various sources and formats | 02-extreme-heat-events-lesson-plan.md |
+| C3.1 | analyze existing code to understand the components and outcomes of the code | 01-jupyter-notebooks-foundations-lesson-plan.md<br>02-extreme-heat-events-lesson-plan.md |
+| C3.2 | modify an existing program, or components of a program, to enable it to complete a different task | 02-extreme-heat-events-lesson-plan.md |
+| C3.4 | write programs that make use of external or add-on modules or libraries | 01-jupyter-notebooks-foundations-lesson-plan.md<br>02-extreme-heat-events-lesson-plan.md |
 
 ## Expectations Not Yet Covered
 | Expectation | Description |
@@ -61,3 +61,4 @@
 ## Notes
 - This tracker should be updated whenever lesson plans are added, removed, or re-scoped.
 - Coverage here indicates explicit mapping in lesson plans; it does not imply full mastery depth.
+
