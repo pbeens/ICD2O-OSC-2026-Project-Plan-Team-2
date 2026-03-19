@@ -1,0 +1,49 @@
+:root {
+  --site-ink: #163047;
+  --site-accent: #bb5a3c;
+  --site-accent-soft: #f3e3db;
+  --site-paper: #f8f4ec;
+}
+
+body {
+  background: linear-gradient(180deg, #fbf8f1 0%, #f4efe4 100%);
+  color: var(--site-ink);
+}
+
+.navbar {
+  border-bottom: 3px solid var(--site-accent);
+}
+
+.sidebar nav[role="doc-toc"] {
+  border-left: 2px solid var(--site-accent-soft);
+}
+
+a {
+  color: #8c3d22;
+}
+
+a:hover {
+  color: #5f2714;
+}
+
+.quarto-title-banner {
+  background:
+    radial-gradient(circle at top right, rgba(187, 90, 60, 0.18), transparent 30%),
+    linear-gradient(135deg, #163047 0%, #214d6d 55%, #2f6b7f 100%);
+  color: #fdf8f1;
+}
+
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .quarto-categories {
+  color: #fdf8f1;
+}
+
+.sidebar-item-text.sidebar-link.active,
+.nav-link.active {
+  font-weight: 700;
+}
+
+main.content {
+  max-width: 900px;
+}

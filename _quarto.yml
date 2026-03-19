@@ -1,0 +1,75 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - README.md
+    - "Project Plan Team 2.md"
+    - lessons/00-data-analysis-big-picture-lesson-plan.md
+    - lessons/00-data-analysis-big-picture-tutorial.md
+    - lessons/00-data-analysis-big-picture-assignment.md
+    - lessons/01-jupyter-notebooks-foundations-lesson-plan.md
+    - lessons/01-jupyter-notebooks-foundations-tutorial.md
+    - lessons/02-extreme-heat-events-lesson-plan.md
+    - lessons/02-extreme-heat-events-tutorial.md
+    - references/student-teacher-manual.md
+    - references/dataset-links.md
+    - references/expectations-compliance.md
+    - references/pact-framework.md
+    - notebooks/csv/02-extreme-heat-events-exploration.ipynb
+    - notebooks/csv/temperature-change-seasonal-exploration.ipynb
+    - notebooks/csv/ghg-emissions-projections-exploration.ipynb
+
+website:
+  title: "ICD2O Data Analysis Pathway"
+  page-navigation: true
+  search: true
+  navbar:
+    background: "#0f2d46"
+    foreground: "#f5f1e8"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: "Project Plan Team 2.md"
+        text: Project Plan
+      - href: README.md
+        text: Repo Guide
+  sidebar:
+    style: "docked"
+    collapse-level: 1
+    search: true
+    contents:
+      - section: "Overview"
+        contents:
+          - index.qmd
+          - README.md
+          - "Project Plan Team 2.md"
+      - section: "Lessons"
+        contents:
+          - lessons/00-data-analysis-big-picture-lesson-plan.md
+          - lessons/00-data-analysis-big-picture-tutorial.md
+          - lessons/00-data-analysis-big-picture-assignment.md
+          - lessons/01-jupyter-notebooks-foundations-lesson-plan.md
+          - lessons/01-jupyter-notebooks-foundations-tutorial.md
+          - lessons/02-extreme-heat-events-lesson-plan.md
+          - lessons/02-extreme-heat-events-tutorial.md
+      - section: "Student And Teacher Resources"
+        contents:
+          - references/student-teacher-manual.md
+          - references/dataset-links.md
+          - references/expectations-compliance.md
+          - references/pact-framework.md
+      - section: "Selected Notebooks"
+        contents:
+          - notebooks/csv/02-extreme-heat-events-exploration.ipynb
+          - notebooks/csv/temperature-change-seasonal-exploration.ipynb
+          - notebooks/csv/ghg-emissions-projections-exploration.ipynb
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+
+metadata-files: []

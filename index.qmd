@@ -1,0 +1,52 @@
+---
+title: "ICD2O Data Analysis Pathway"
+---
+
+## Purpose
+
+This Quarto site is a curated published view of the repository.
+The existing Markdown pages and notebooks remain the main files to edit.
+Quarto sits on top of those files so the repo can work as both a planning workspace and a teacher-facing site.
+
+## Recommended Flow
+
+Use the materials in this order:
+
+1. Open the [Project Plan](Project%20Plan%20Team%202.md) for the current sequence, scope, and curriculum alignment.
+2. Read the relevant lesson plan in `lessons/`.
+3. Open the companion tutorial for the detailed teaching script and beginner explanations.
+4. Run the notebook if the lesson includes one.
+5. Use or adapt the assignment after the guided learning sequence.
+
+## Current Pathway
+
+### Lesson 00
+
+- [Lesson 00 Lesson Plan](lessons/00-data-analysis-big-picture-lesson-plan.md)
+- [Lesson 00 Tutorial](lessons/00-data-analysis-big-picture-tutorial.md)
+- [Lesson 00 Assignment](lessons/00-data-analysis-big-picture-assignment.md)
+
+### Lesson 01
+
+- [Lesson 01 Lesson Plan](lessons/01-jupyter-notebooks-foundations-lesson-plan.md)
+- [Lesson 01 Tutorial](lessons/01-jupyter-notebooks-foundations-tutorial.md)
+
+### Lesson 02
+
+- [Lesson 02 Lesson Plan](lessons/02-extreme-heat-events-lesson-plan.md)
+- [Lesson 02 Tutorial](lessons/02-extreme-heat-events-tutorial.md)
+- [Lesson 02 Notebook](notebooks/csv/02-extreme-heat-events-exploration.ipynb)
+
+## Key References
+
+- [Repository Guide](README.md)
+- [Student And Teacher Manual](references/student-teacher-manual.md)
+- [Dataset Links](references/dataset-links.md)
+- [Expectations Compliance](references/expectations-compliance.md)
+- [PACT Framework](references/pact-framework.md)
+
+## Notes For Editors
+
+- Keep editing the existing `.md` and `.ipynb` files directly.
+- If the lesson sequence changes, update the Quarto sidebar in `_quarto.yml` in the same pass.
+- Only the curated teaching and planning pages are included in the site. Internal workflow files remain repo-only.

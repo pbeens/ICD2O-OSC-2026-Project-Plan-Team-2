@@ -7,6 +7,7 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.venv-*/
 venv/
 env/
 ENV/
@@ -53,3 +54,7 @@ artifacts/
 *.local
 notebooks/CriticalHabitat.zip
 *.zip
+
+/.quarto/
+/_site/
+**/*.quarto_ipynb

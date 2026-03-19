@@ -29,12 +29,23 @@
   - Prefer lightweight files and references over committing very large raw data.
 - `notebooks/`
   - Jupyter notebooks (`.ipynb`) for each analysis topic.
+  - Organize notebooks by source/input type when helpful, for example `notebooks/csv/`, `notebooks/excel/`, `notebooks/json/`, and `notebooks/zip/`.
+- `lessons/`
+  - Lesson plans, tutorials, assignments, and other lesson-specific teacher/student files.
 - `references/`
   - Notes, summaries, source lists, and planning docs.
+- `resources/`
+  - Curriculum, policy, templates, and converted source/reference materials.
+- `skills/`
+  - Repository-local skills for specialized workflows.
+- `utils/`
+  - Helper scripts used for repository workflows such as PDF conversion checks.
 - `logs/` (optional)
   - Data ingestion logs or processing notes.
 - `README.md` (recommended)
   - High-level project summary and quick-start instructions.
+- `_quarto.yml` / `index.qmd` / `styles.css` (optional)
+  - Quarto site layer for publishing a curated teacher-facing view of selected repository content while keeping the existing Markdown and notebook files as the main editable sources.
 
 Create folders as needed when first used. Keep names clear and topic-based.
 
@@ -97,14 +108,14 @@ Add a final Markdown cell at the bottom of each notebook:
 ```md
 ---
 ### Open In Colab
-[Open this notebook in Google Colab](https://colab.research.google.com/github/<OWNER>/<REPO>/blob/<BRANCH>/notebooks/<NOTEBOOK_FILE>.ipynb)
+[Open this notebook in Google Colab](https://colab.research.google.com/github/<OWNER>/<REPO>/blob/<BRANCH>/<NOTEBOOK_PATH>)
 ```
 
 Replace placeholders:
 - `<OWNER>`: GitHub username or org
 - `<REPO>`: repository name
 - `<BRANCH>`: usually `main`
-- `<NOTEBOOK_FILE>`: exact notebook filename
+- `<NOTEBOOK_PATH>`: exact notebook path relative to the repository root, for example `notebooks/csv/02-extreme-heat-events-exploration.ipynb`
 
 For this repository, use:
 - `<OWNER>` = `pbeens`
@@ -141,6 +152,7 @@ Colab link validation technique:
 - In every lesson plan, include a clear ordered activity list so the classroom process is visible at a glance.
 - For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lessons/` for detailed, step-by-step concept and code explanations.
 - Store lesson plan and companion tutorial in the same `lessons/` folder using matched names when possible (for example, `01-topic-lesson-plan.md` and `01-topic-tutorial.md`).
+- Lesson assignment filenames should follow the same sequence prefix pattern: `NN-topic-assignment.md`.
 - In the 5E lesson plan `Materials/Resources`, include a bullet linking to the companion tutorial file.
 - Use sequential lesson numbering for pathway clarity (for example: `Lesson 00` big-picture foundations, `Lesson 01` tools/workflow, then dataset analysis lessons).
 - Lesson plan filenames should start with the lesson number: `NN-topic-lesson-plan.md` and `NN-topic-tutorial.md`.
@@ -152,6 +164,7 @@ Colab link validation technique:
 - In `Project Plan Team 2.md`, maintain a `% of Expectations Covered` metric that matches `references/expectations-compliance.md` (specific expectations basis).
 - In `Project Plan Team 2.md`, place document links inside existing sections (for example: compliance links in Curriculum Alignment, lesson links in Deliverables, and file/resource links in Resources & Risk), instead of creating an extra standalone links section.
 - In teacher-facing front documents (`Project Plan Team 2.md` and `README.md`), include a short document-flow description for `Lesson Plan -> Tutorial -> Notebook -> Assignment` and state the recommended use order explicitly.
+- If the repository uses a Quarto site layer, keep `_quarto.yml` synchronized with the curated set and order of published lesson, reference, and notebook pages whenever that sequence changes.
 - For PDF-to-Markdown work, generate a MarkItDown baseline text file (`name.markitdown.txt`) beside the PDF and use it as a fidelity reference for checking omissions in the cleaned Markdown output.
 - For PDF-to-Markdown work, also run `utils/check_pdf_conversion_structure.py` so PDF TOC headings are verified as real Markdown headings. A conversion should not be accepted if major headings only survived as body text.
 

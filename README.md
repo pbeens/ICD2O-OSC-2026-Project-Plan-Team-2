@@ -93,6 +93,19 @@ Dataset/resource intake is tracked in:
 ## Project Plan
 - `Project Plan Team 2.md` (active front-end project plan document populated from the project plan template)
 
+## Quarto Site
+- `_quarto.yml` defines a curated Quarto website layer over the existing repository files.
+- `index.qmd` is the site landing page.
+- `styles.css` provides lightweight site styling.
+- The existing Markdown files and notebooks remain the main source files to edit.
+- When lesson sequencing or curated published pages change, update `_quarto.yml` in the same edit pass.
+
+## GitHub Pages Deployment
+- The repository publishes the Quarto site through GitHub Actions using `.github/workflows/publish-quarto.yml`.
+- GitHub Pages should be configured to use **GitHub Actions** as the build and deployment source.
+- The generated `_site/` folder is build output and should stay uncommitted.
+- If Quarto rendering fails in GitHub Actions, first test the same change locally with `quarto render`.
+
 ## Teacher Framework
 - `references/pact-framework.md` (PACT framework used for assignment design in an AI-rich classroom)
 
@@ -125,4 +138,3 @@ Recommended teacher use order:
 - Do not overwrite user-created analysis without explicit request.
 - If data is downloaded/transformed, note notebook and output location.
 - Flag uncertain licensing or source credibility before use.
-
