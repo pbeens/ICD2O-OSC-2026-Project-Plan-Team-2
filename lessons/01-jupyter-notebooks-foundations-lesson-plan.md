@@ -26,6 +26,11 @@
 | Jupyter Notebook Foundations for Data Analysis |
 | :---- |
 
+## Lesson Role In The Pathway
+
+| This is the front-facing anchor document for Lesson 01. It gives the big picture for the transition from conceptual understanding into notebook workflow, so students see Jupyter as part of a larger analysis process rather than as isolated software steps. |
+| :---- |
+
 ## Curriculum Expectations
 
 | - B2.1 use file management techniques to organize, edit, and share files.<br>- B2.2 identify and use effective practices when learning to use new software.<br>- C3.1 analyze existing code to understand components and outcomes.<br>- C3.4 use external modules or libraries in a program. |
@@ -45,7 +50,7 @@ Students will be able to:
 
 ## Teacher Prep And Opening Sequence
 
-| 1. Review this lesson plan for the workflow goals and troubleshooting focus.<br>2. Open the companion tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md) so the definitions of notebook, cell, library, import, DataFrame, method, and property are ready for modelling.<br>3. Open Jupyter Notebook or Google Colab before class and prepare a blank starter notebook students can copy from or follow live.<br>4. Confirm students know how they will access the notebook environment during class.<br>5. Begin by showing the difference between a plain script and a notebook before students create their own cells. |
+| 1. Review this lesson plan first for the workflow goals, troubleshooting focus, and the role of Lesson 01 as the bridge between Lesson 00 concepts and later full notebook analysis.<br>2. Read through the companion tutorial: [01-jupyter-notebooks-foundations-tutorial.md](01-jupyter-notebooks-foundations-tutorial.md) before class so the definitions of notebook, cell, library, import, DataFrame, method, and property are ready for modelling.<br>3. Open Jupyter Notebook or Google Colab before class and prepare a blank starter notebook students can copy from or follow live.<br>4. Confirm students know how they will access the notebook environment during class.<br>5. Make explicit to students that this lesson prepares them for the more complete notebook and assignment work in the next lesson sequence.<br>6. Begin by showing the difference between a plain script and a notebook before students create their own cells. |
 | :---- |
 
 ## Activity List
@@ -90,7 +95,7 @@ Students will be able to:
 
 ## Comments
 
-| Keep this lesson procedural and confidence-building. Use short cells and immediate feedback to reduce beginner frustration. After reviewing the lesson plan, the teacher should open the companion tutorial first and then the notebook environment so modelling follows the same order students will experience. |
+| Keep this lesson procedural and confidence-building. Use short cells and immediate feedback to reduce beginner frustration. The lesson plan is the front-facing lesson document, the tutorial should be read before class, and the live notebook environment should only be opened after that preparation is complete. This lesson should be framed as preparation for the later notebook-based assignment work rather than as an isolated software lesson. |
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)

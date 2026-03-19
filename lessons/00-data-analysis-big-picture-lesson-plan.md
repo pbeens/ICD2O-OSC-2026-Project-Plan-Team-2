@@ -26,6 +26,11 @@
 | Big Picture: What Data Analysis Is and Why It Matters |
 | :---- |
 
+## Lesson Role In The Pathway
+
+| This is the front-facing anchor document for Lesson 00. It gives the big picture for the opening lesson in the sequence and prepares students for the later notebook-based lessons by establishing purpose, vocabulary, and workflow structure before any code is introduced. |
+| :---- |
+
 ## Curriculum Expectations
 
 | - A1.1 apply computational thinking concepts and practices when planning and designing computational artifacts.<br>- A1.2 use a variety of tools and processes to plan, design, and share algorithms and computational artifacts.<br>- A2.1 investigate social, economic, and environmental issues related to digital technology.<br>- A3.1 investigate how digital technology skills are used in real-world applications. |
@@ -45,7 +50,7 @@ Students will be able to:
 
 ## Teacher Prep And Opening Sequence
 
-| 1. Review this lesson plan for goals, timing, and assessment focus.<br>2. Open the companion tutorial: [00-data-analysis-big-picture-tutorial.md](00-data-analysis-big-picture-tutorial.md) to prepare the vocabulary and examples you will use during direct instruction.<br>3. Open or prepare the whiteboard/slides for the IPO model examples.<br>4. Prepare the simple sample task cards or list students will sort into Input, Process, and Output.<br>5. Start the lesson with the city cooling-centre scenario before introducing formal definitions. |
+| 1. Review this lesson plan first for goals, timing, assessment focus, and the big-picture role of Lesson 00 in the overall pathway.<br>2. Read through the companion tutorial: [00-data-analysis-big-picture-tutorial.md](00-data-analysis-big-picture-tutorial.md) before teaching so the vocabulary, examples, and explanatory sequence are clear before students begin the assignment work.<br>3. Open or prepare the whiteboard/slides for the IPO model examples.<br>4. Prepare the simple sample task cards or list students will sort into Input, Process, and Output.<br>5. Review the assignment: [00-data-analysis-big-picture-assignment.md](00-data-analysis-big-picture-assignment.md) so you can connect the class discussion and IPO work to the student task.<br>6. Start the lesson with the city cooling-centre scenario before introducing formal definitions. |
 | :---- |
 
 ## Activity List
@@ -90,7 +95,7 @@ Students will be able to:
 
 ## Comments
 
-| Foundational lesson for all subsequent notebook lessons. Keep coding minimal; focus on understanding the purpose and structure of analysis. After reviewing the lesson plan, the teacher should open the companion tutorial first so the vocabulary and examples are ready before students encounter later notebook terms. |
+| Foundational lesson for all subsequent notebook lessons. Keep coding minimal; focus on understanding the purpose and structure of analysis. The lesson plan is the front-facing lesson document, the tutorial should be read before class to prepare the explanatory arc, and the assignment should be introduced as the place where students apply the IPO ideas from the lesson. There is no notebook in this lesson, and that absence should be clear to students so they understand that Lesson 00 is about conceptual grounding rather than tool execution. |
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)

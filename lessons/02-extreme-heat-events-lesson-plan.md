@@ -26,6 +26,11 @@
 | Beginner Data Analysis with Extreme Heat Events (Canada) |
 | :---- |
 
+## Lesson Role In The Pathway
+
+| This is the front-facing anchor document for Lesson 02. It gives the big picture for the first full guided data-analysis lesson in the sequence and connects the conceptual groundwork from Lesson 00 and the notebook workflow from Lesson 01 to a real beginner-level notebook task. |
+| :---- |
+
 ## Curriculum Expectations
 
 | - A1.1 apply computational thinking concepts and practices when planning and designing computational artifacts.<br>- A1.2 use a variety of tools and processes to plan, design, and share algorithms and computational artifacts.<br>- C2.2 write programs that use and generate data involving various sources and formats.<br>- C3.1 analyze existing code to understand the components and outcomes of the code.<br>- C3.2 modify an existing program, or components of a program, to enable it to complete a different task.<br>- C3.4 write programs that make use of external or add-on modules or libraries.<br>- A2.1 investigate current social, cultural, economic, environmental, and ethical issues related to digital technology that have personal, local, and global impacts, taking various perspectives into account. |
@@ -45,7 +50,7 @@ Students will be able to:
 
 ## Teacher Prep And Opening Sequence
 
-| 1. Review this lesson plan for learning goals, success criteria, and assessment checkpoints.<br>2. Open the companion tutorial: [02-extreme-heat-events-tutorial.md](02-extreme-heat-events-tutorial.md) first so the key vocabulary and step explanations are ready before the notebook walkthrough begins.<br>3. Open the lesson notebook: [notebooks/csv/02-extreme-heat-events-exploration.ipynb](../notebooks/csv/02-extreme-heat-events-exploration.ipynb) and confirm the CSV loads correctly.<br>4. Prepare the projector/teacher display with the notebook title, goal, and final chart preview visible for the lesson opening.<br>5. Start class with the extreme-heat question and final chart destination, then move into the guided notebook sequence one cell at a time. |
+| 1. Review this lesson plan first for learning goals, success criteria, assessment checkpoints, and the role of Lesson 02 as the first full guided notebook-analysis lesson.<br>2. Read through the companion tutorial: [02-extreme-heat-events-tutorial.md](02-extreme-heat-events-tutorial.md) before class so the key vocabulary, step explanations, and explanatory arc are ready before the notebook walkthrough begins.<br>3. Open the lesson notebook: [notebooks/csv/02-extreme-heat-events-exploration.ipynb](../notebooks/csv/02-extreme-heat-events-exploration.ipynb) and confirm the CSV loads correctly.<br>4. Plan how you will explain the notebook's role to students: it is the guided workspace where they will complete the lesson analysis and gather evidence for any follow-up task or assignment.<br>5. Prepare the projector/teacher display with the notebook title, goal, and final chart preview visible for the lesson opening.<br>6. Start class with the extreme-heat question and final chart destination, then move into the guided notebook sequence one cell at a time. |
 | :---- |
 
 ## Activity List
@@ -90,7 +95,7 @@ Students will be able to:
 
 ## Comments
 
-| Basis notebook selection rationale: This notebook is the most beginner-friendly option in the current repo because it uses direct CSV ingestion and avoids advanced structural cleanup patterns (for example, header-row reassignment loops). Requirements and evaluation approach are aligned to `resources/ICD2O_2023.md` and `resources/growSuccess.md`. After reviewing the lesson plan, the teacher should open the companion tutorial first and then the notebook so students hear the vocabulary before they encounter it inside code. |
+| Basis notebook selection rationale: This notebook is the most beginner-friendly option in the current repo because it uses direct CSV ingestion and avoids advanced structural cleanup patterns (for example, header-row reassignment loops). Requirements and evaluation approach are aligned to `resources/ICD2O_2023.md` and `resources/growSuccess.md`. The lesson plan is the front-facing lesson document, the tutorial should be read before class so the explanatory arc is ready, and the notebook should be introduced explicitly as the guided workspace students will use to produce their analysis evidence. Any future assignment for this lesson should tell students clearly how that notebook is used in the work. |
 | :---- |
 
 [^1]:  [Why We Chose the 5E Lesson Plan Format](https://docs.google.com/document/d/1oTrJQprVIA7ggm6wgOXY9Z9adnE6T-9atT3vzn68zT0/edit?tab=t.0#heading=h.eh15dw7kt3ky)

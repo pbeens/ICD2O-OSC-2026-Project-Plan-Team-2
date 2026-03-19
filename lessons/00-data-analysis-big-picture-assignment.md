@@ -9,6 +9,14 @@
 ## Purpose
 In this task, you will build a clear understanding of what data analysis is, how it works using the IPO model, and how it helps people make better decisions in real life.
 
+## How This Assignment Fits The Lesson
+This assignment comes after the Lesson 00 lesson plan and companion tutorial.
+Use the lesson and tutorial ideas first, then complete the assignment to show your understanding.
+
+There is no Jupyter notebook in Lesson 00.
+That is intentional.
+This lesson is about building the big-picture understanding that students will need before they begin notebook work in later lessons.
+
 ## Part 1: Explain It Simply (Process Checkpoint)
 In your own words, explain:
 - What is data analysis?
