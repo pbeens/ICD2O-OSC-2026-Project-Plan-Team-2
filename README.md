@@ -106,6 +106,44 @@ Dataset/resource intake is tracked in:
 - The generated `_site/` folder is build output and should stay uncommitted.
 - If Quarto rendering fails in GitHub Actions, first test the same change locally with `quarto render`.
 
+### Workflow Details
+- Workflow file: `.github/workflows/publish-quarto.yml`
+- Workflow name: `Publish Quarto Site`
+- Trigger events:
+  - push to `main`
+  - manual run with `workflow_dispatch`
+- Build environment:
+  - Ubuntu runner
+  - Python 3.11
+  - Python packages installed from `requirements.txt`
+  - Quarto installed by the Quarto GitHub Action
+- Deployment target:
+  - GitHub Pages via the official `actions/deploy-pages` action
+  - rendered output uploaded from `_site/`
+
+### GitHub Setup Steps
+1. Push the repository changes, including `_quarto.yml` and `.github/workflows/publish-quarto.yml`, to `main`.
+2. In GitHub, open `Settings -> Pages`.
+3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+4. Open the `Actions` tab and confirm the `Publish Quarto Site` workflow runs successfully.
+5. After the first successful deployment, GitHub Pages will show the published site URL in the workflow summary and Pages settings.
+
+### Local Verification Before Push
+```bash
+quarto render
+```
+
+Optional local preview:
+
+```bash
+quarto preview
+```
+
+### Notes
+- `_site/` does not need to be committed when using the GitHub Actions deployment path.
+- If a notebook or Markdown file breaks the Pages build, the same file will usually fail local `quarto render` too.
+- If the lesson sequence or curated published pages change, update `_quarto.yml` in the same edit pass.
+
 ## Teacher Framework
 - `references/pact-framework.md` (PACT framework used for assignment design in an AI-rich classroom)
 
