@@ -49,19 +49,19 @@ website:
             href: "Project Plan Team 2.md"
       - section: "Lessons"
         contents:
-          - text: "Lesson 00 Plan"
+          - text: "00 Big Picture"
             href: lessons/00-data-analysis-big-picture-lesson-plan.md
-          - text: "Lesson 00 Tutorial"
+          - text: "00 Tutorial"
             href: lessons/00-data-analysis-big-picture-tutorial.md
-          - text: "Lesson 00 Assignment"
+          - text: "00 Assignment"
             href: lessons/00-data-analysis-big-picture-assignment.md
-          - text: "Lesson 01 Plan"
+          - text: "01 Jupyter Foundations"
             href: lessons/01-jupyter-notebooks-foundations-lesson-plan.md
-          - text: "Lesson 01 Tutorial"
+          - text: "01 Tutorial"
             href: lessons/01-jupyter-notebooks-foundations-tutorial.md
-          - text: "Lesson 02 Plan"
+          - text: "02 Extreme Heat"
             href: lessons/02-extreme-heat-events-lesson-plan.md
-          - text: "Lesson 02 Tutorial"
+          - text: "02 Tutorial"
             href: lessons/02-extreme-heat-events-tutorial.md
       - section: "Student And Teacher Resources"
         contents:
@@ -75,11 +75,11 @@ website:
             href: references/pact-framework.md
       - section: "Selected Notebooks"
         contents:
-          - text: "Extreme Heat Events Notebook"
+          - text: "02 Notebook"
             href: notebooks/csv/02-extreme-heat-events-exploration.ipynb
-          - text: "Temperature Change Notebook"
+          - text: "Seasonal Temperature"
             href: notebooks/csv/temperature-change-seasonal-exploration.ipynb
-          - text: "GHG Projections Notebook"
+          - text: "GHG Projections"
             href: notebooks/csv/ghg-emissions-projections-exploration.ipynb
 
 format:
