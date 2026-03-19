@@ -51,6 +51,8 @@ Because this course uses technical language, students need plain-language defini
 - **Evidence**: information that supports a claim or decision
 - **Pattern**: something that repeats or shows regularity
 - **Trend**: a general direction of change
+- **Notebook**: a digital workspace where text, code, and results can be organized together
+- **Jupyter Notebook**: a specific kind of interactive notebook used in this course, where students can write explanations, run Python code, and see output in one document
 - **Dataset**: a collection of related data
 - **CSV**: a file type used to store tables in plain text; it stands for "comma-separated values"
 - **Tool**: something we use to help us do a task
