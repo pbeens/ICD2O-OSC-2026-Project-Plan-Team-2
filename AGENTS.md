@@ -145,15 +145,19 @@ Colab link validation technique:
 - In lesson plans, format `Curriculum Expectations` as a bulleted list, with one expectation per bullet.
 - In lesson plans, format `Learning Goals` as a bulleted list, with one goal per bullet.
 - In lesson plans, format `Materials/Resources` as a bulleted list, with one material/resource per bullet.
+- Treat the lesson plan as the front-facing anchor document for each lesson. It should give the big picture of what the lesson is for, what students will do, what resources are used, and how the related lesson files fit together.
 - At the top of every lesson-related file (`lesson plan`, `tutorial`, `assignment`, and lesson-specific notebook notes when applicable), include a `Related Lesson Files` section that links to the other documents for that lesson.
 - In `Related Lesson Files`, list the document types in this order: `Lesson plan`, `Tutorial`, `Notebook`, `Assignment`.
 - If a related file does not exist yet, write `not yet created` instead of omitting it.
 - In every lesson plan, include an explicit teacher-facing sequence that states what to open first after reviewing the lesson plan (normally the companion tutorial, then the notebook if one exists).
+- In every lesson plan, explicitly encourage the teacher to read through the companion tutorial before commencing the assignment or notebook-based task so the teacher has the full explanatory arc before students begin working.
 - In every lesson plan, include a clear ordered activity list so the classroom process is visible at a glance.
 - For beginner lessons, keep the 5E lesson plan concise and create a separate companion tutorial file in `lessons/` for detailed, step-by-step concept and code explanations.
 - Store lesson plan and companion tutorial in the same `lessons/` folder using matched names when possible (for example, `01-topic-lesson-plan.md` and `01-topic-tutorial.md`).
 - Lesson assignment filenames should follow the same sequence prefix pattern: `NN-topic-assignment.md`.
 - In the 5E lesson plan `Materials/Resources`, include a bullet linking to the companion tutorial file.
+- In every lesson assignment, explain clearly how the notebook is incorporated into the work. If students are expected to run, read, modify, submit from, or take evidence from a Jupyter notebook, say so directly in the assignment instructions rather than assuming the notebook relationship is obvious.
+- When a lesson uses a notebook, keep the document flow explicit and consistent: `Lesson Plan -> Tutorial -> Notebook -> Assignment`. The lesson plan should frame that flow, the tutorial should prepare the teacher and student for the notebook work, and the assignment should tell students exactly how the notebook fits into the task.
 - Use sequential lesson numbering for pathway clarity (for example: `Lesson 00` big-picture foundations, `Lesson 01` tools/workflow, then dataset analysis lessons).
 - Lesson plan filenames should start with the lesson number: `NN-topic-lesson-plan.md` and `NN-topic-tutorial.md`.
 - Lesson plan header format should be `# Lesson NN: <Title>[^1]` (lesson number at the beginning; do not include `5E` in the header line).
