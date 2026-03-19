@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #fbf8f1 0%, #f4efe4 100%);
+  background: #fbf8f1;
   color: var(--site-ink);
 }
 
