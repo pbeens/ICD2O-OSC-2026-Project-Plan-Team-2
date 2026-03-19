@@ -77,26 +77,35 @@ Final Product Format:
 
 Active lesson files:
 - **Lesson 00: Big Picture Data Analysis**
+  - Role in the pathway: front-facing conceptual entry point. This lesson introduces what data analysis is, why it matters, and how the IPO model helps students understand a full workflow before they touch notebook code.
+  - Teacher focus: establish vocabulary, clarify purpose, and frame the overall sequence of Lessons 00-02.
+  - Student work: IPO sorting, discussion, and introductory assignment thinking rather than notebook execution.
   - Lesson plan: [lessons/00-data-analysis-big-picture-lesson-plan.md](lessons/00-data-analysis-big-picture-lesson-plan.md)
   - Tutorial: [lessons/00-data-analysis-big-picture-tutorial.md](lessons/00-data-analysis-big-picture-tutorial.md)
   - Notebook: not yet created
   - Assignment: [lessons/00-data-analysis-big-picture-assignment.md](lessons/00-data-analysis-big-picture-assignment.md)
 - **Lesson 01: Jupyter Notebook Foundations for Data Analysis**
+  - Role in the pathway: procedural bridge from concept to tool use. This lesson shows students how notebooks work so later analysis tasks feel structured instead of random.
+  - Teacher focus: model notebook workflow, explain markdown versus code cells, and build confidence with execution order and core vocabulary.
+  - Student work: create and run simple notebook cells, practise imports, and explain how notebook structure supports analysis.
   - Lesson plan: [lessons/01-jupyter-notebooks-foundations-lesson-plan.md](lessons/01-jupyter-notebooks-foundations-lesson-plan.md)
   - Tutorial: [lessons/01-jupyter-notebooks-foundations-tutorial.md](lessons/01-jupyter-notebooks-foundations-tutorial.md)
   - Notebook: not yet created
   - Assignment: not yet created
 - **Lesson 02: Beginner Data Analysis with Extreme Heat Events**
+  - Role in the pathway: first full guided data-analysis lesson. This lesson applies the concepts from Lesson 00 and the notebook workflow from Lesson 01 to a real Canadian dataset.
+  - Teacher focus: guide students through the complete beginner workflow of loading data, inspecting it, cleaning it, charting it, and interpreting evidence.
+  - Student work: use the lesson notebook to complete the analysis sequence and produce evidence-based observations from the chart output.
   - Lesson plan: [lessons/02-extreme-heat-events-lesson-plan.md](lessons/02-extreme-heat-events-lesson-plan.md)
   - Tutorial: [lessons/02-extreme-heat-events-tutorial.md](lessons/02-extreme-heat-events-tutorial.md)
   - Notebook: [notebooks/csv/02-extreme-heat-events-exploration.ipynb](notebooks/csv/02-extreme-heat-events-exploration.ipynb)
   - Assignment: not yet created
 
 Document flow:
-- Lesson plan: defines learning goals, sequence, and assessment intent.
-- Tutorial: provides detailed teaching/explanation walkthrough.
-- Notebook: provides runnable student workflow and outputs.
-- Assignment: provides student-facing task and submission expectations.
+- Lesson plan: front-facing document for the lesson. It gives the big picture, the purpose of the lesson, the activity sequence, and how the other lesson files fit together.
+- Tutorial: detailed teaching and learning walkthrough. The teacher should read this before starting the notebook-based work or assignment so the explanatory arc and vocabulary are clear in advance.
+- Notebook: runnable student workflow and evidence source. When present, it is the place where students carry out the guided analysis steps.
+- Assignment: student-facing task and submission expectations. It should explain clearly how the notebook is used in the lesson, including whether students must read from it, run it, modify it, or submit work based on it.
 
 Recommended teacher use order:
 1. Review the lesson plan first.
