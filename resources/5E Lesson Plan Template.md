@@ -34,6 +34,14 @@ Use a bulleted list with one measurable goal per bullet. Keep goals observable a
 
 Use a bulleted list with one item per bullet. Include links/paths for the lesson plan, tutorial, notebook, assignment, datasets, and any slides/handouts.
 
+## Teacher Prep And Opening Sequence
+
+Use a numbered list. State what the teacher should review or open first after reading the lesson plan. Normally this should include reading the companion tutorial before class, preparing any notebook or slides, reviewing the assignment if one exists, and clarifying the opening move for the lesson.
+
+## Activity List
+
+Use a numbered list that gives the classroom process at a glance from beginning to end. Keep this as the quick operational flow of the lesson. The 5E sections below should then explain that same lesson in pedagogical terms with more detail.
+
 ## Lesson Body
 
 3-6 sentence overview of the lesson arc and timing. Explain how the class moves through `Engage -> Explore -> Explain -> Elaborate -> Evaluate`.
